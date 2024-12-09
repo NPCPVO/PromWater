@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <!-- крошки -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- соц. сети справа -->
+        @@include('_social_section.html')
+
+        <!-- Контакты -->
+        <section class="mt-4">
+            <div class="container">
+                <h1 class="section-title h1">Контакты</h1>
+            </div>
+
+            <div class="container">
+                <h4 class="section-title h4">АДРЕС:</h4>
+
+                <div class="row g-3 g-md-5">
+
+                    <div class="col-lg-4">
+                        <div class="address__card h-100 d-flex flex-column">
+                            <span class="address__title">Конструкторское бюро:</span>
+                            <p class="addres__content">603089, Россия, Нижний Новгород, ул. Агрономическая, 62Б</p>
+                            <a href="#" class="mt-auto addres__link" data-coordinates="56.304655, 44.038344">показать на карте</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="address__card h-100 d-flex flex-column">
+                            <span class="address__title">Склад 1:</span>
+                            <p class="addres__content">603093, Россия, Нижний Новгород, ул. Яблоневая, 20, ЛИТЕРА КК1, П1</p>
+                            <a href="#" class="mt-auto addres__link" data-coordinates="56.309739, 44.060532">показать на карте</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <div class="address__card h-100 d-flex flex-column">
+                            <span class="address__title">Конструкторское бюро: </span>
+                            <p class="addres__content">603093, Россия, Нижний Новгород, ул. Яблоневая, 28 К2</p>
+                            <a href="#" class="mt-auto addres__link" data-coordinates="56.312105, 44.060451">показать на карте</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row gy-5 g-3 mt-5 pt-3 pt-md-0">
+                    <div class="col-md-4">
+                        <div class="">
+                            <h4 class="section-title h4 mb-3">Телефон/факс:</h4>
+                            <a href="tel:+7 (831) 200-38-25" class="contact__link">+7 (831) 200-38-25</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="">
+                            <h4 class="section-title h4 mb-3">Электронная Почта:</h4>
+                            <a href="mailto:info+1179671@prom-water.ru"
+                                class="contact__link">info+1179671@prom-water.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="">
+                            <h4 class="section-title h4 mb-3">What`s app</h4>
+                            <a href="https://wa.me/79200426470?roistat_visit=547691?"
+                                class="btn btn-info text-white contact__whatsapp">
+                                Задать вопрос инженеру
+                                <svg height="20" width="20" class="ms-1 ms-lg-3 flex-shrink-0">
+                                    <use xlink:href="images/sprite.svg#header--whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mt-4">
+            <div class="container">
+                <div class="ymap" id="ymap"></div>
+            </div>
+        </section>
+    </main>
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

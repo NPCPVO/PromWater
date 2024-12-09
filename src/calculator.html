@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <!-- крошки -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Конфигуратор обратного осмоса</li>
+
+                </ol>
+            </div>
+        </nav>
+
+        <!-- соц. сети справа -->
+        @@include('_social_section.html')
+
+        <!-- первый блок -->
+        <section class="mt-4">
+            
+            <div class="container">
+                <h1 class="section-title h1">Конфигуратор обратного осмоса</h1>
+            </div>
+
+            @@include('_calculator.html')
+
+        </section>
+
+    </main>
+
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

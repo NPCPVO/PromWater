@@ -1,0 +1,104 @@
+<!-- выбор города -->
+<div class="modal fade" id="selectCity" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header border-0">
+                <div class="w-100 me-3">
+                    <input type="search" class="form-control cities__search" placeholder="Поиск по городам">
+                </div>
+                <a class="ms-auto" role="button" data-bs-dismiss="modal">
+                    <svg height="30" width="30">
+                        <use xlink:href="images/sprite.svg#header--close"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="modal-body mx-4 mb-3 p-0">
+                @@include('_cities_list.html')
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+<!-- Подверждение города -->
+<div class="modal fade" id="confirmCity" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header border-0 p-0">
+                <a class="ms-auto confirm-city__close" role="button" data-bs-dismiss="modal">
+                    <svg height="25" width="25">
+                        <use xlink:href="images/sprite.svg#header--close"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="modal-body py-4">
+                <div class="confirm-city__text text-center">
+                    Правильно ли выбран город? <a href="#selectCity" data-bs-toggle="modal" data-bs-target="#selectCity">Москва</a>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <a class="confirm-city__button confirm-city__confirm me-4" data-bs-dismiss="modal" data-city="Москва">Да</a>
+                    <a class="confirm-city__button confirm-city__secondary" data-bs-toggle="modal" data-bs-target="#selectCity">Нет</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end  -->
+
+<!-- Уведомление о новой версии сайта -->
+<div class="modal fade" id="isNewSite" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header border-0 p-0">
+                <a class="ms-auto confirm-city__close" role="button" data-bs-dismiss="modal">
+                    <svg height="25" width="25">
+                        <use xlink:href="images/sprite.svg#header--close"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="modal-body py-4">
+                <div class="confirm-city__text text-center">
+                    Уважаемый посетитель, Вы попали на <b>новую</b> версию сайта компании Промводочистка. В данный момент сайт работает в тестовом режиме. Вы можете воспользоваться старой версией сайта. Приносим извинения за возможные неудобства
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
+                    <a class="confirm-city__button confirm-city__confirm me-md-4 mb-3 mb-md-0 fs-7" data-bs-toggle="modal" data-bs-target="#isNewSite">Остаться на новой версии сайта</a>
+                    <a href="https://old.prom-water.ru/" class="confirm-city__button confirm-city__secondary fs-7" >Перейти на статрую версию сайта</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end  -->
+
+<!-- Thanks Popup -->
+<div id="thanks" class="popup">
+   <div class="popup-content d-flex flex-column justify-content-center align-items-center text-center">
+        <img loading="lazy" src="images/logo256.png" alt="" class="thanks-img">
+
+        <div class="mt-5">
+            <span class="thanks-title">Спасибо за заявку!</span>
+        </div>
+
+        <div class="mt-4">
+            <span class="thanks-description">
+                Наш менеджер в ближайшее время 
+                <br>
+                свяжется с Вами.
+            </span>
+        </div>
+   </div>
+</div>
+<!-- end  -->

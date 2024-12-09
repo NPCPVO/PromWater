@@ -1,0 +1,64 @@
+<div class="order-offcanvas offcanvas offcanvas-end" tabindex="-1" id="order-offcanvas" data-bs-scroll="false">
+    <div class="offcanvas-header pb-0">
+        <a class="ms-auto" role="button" data-bs-dismiss="offcanvas">
+            <svg height="30" width="30" >
+                <use xlink:href="images/sprite.svg#header--close"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="offcanvas-body pt-0 pt-md-3 d-flex">
+        <div class="container pb-3 my-auto">
+            <div class="d-flex align-items-center">
+                <h3 class="section-title h3">Оставить заявку</h3>
+            </div>
+
+            <form action="" class="js-ajax-form">
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+                    </div>
+    
+                    <div class="col-md-6">
+                        @@include('./components/_form.phone-input.html')
+                    </div>
+    
+                    <div class="col-12">
+                        <textarea name="comments" class="form-control" rows="3" placeholder="Ваш комментарий"></textarea>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Ваш e-mail" name="email" required>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <label for="order-file-1" class="form-control text-center file-input-label">
+                            Прикрепить файл
+                        </label>
+                        
+                        <input class="visually-hidden js-file-input" type="file" name="file" id="order-file-1">
+                    </div>
+
+                </div>
+
+                <div class="text-center mb-3 mt-3 fw-light fs-6 lh-sm">
+                    <small>
+                        Нажимая кнопку “Отправить” вы соглашаетесь с условиями обработки персональных данных
+                    </small>
+                </div>
+
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-primary w-100">
+                        Отправить
+                        <svg height="30" width="26" class="ms-3">
+                            <use xlink:href="images/sprite.svg#icons--clipboard-edit"></use>
+                        </svg>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

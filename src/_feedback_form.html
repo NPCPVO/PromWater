@@ -1,0 +1,43 @@
+<form action="" class="js-ajax-form feed-back__from">
+    <div class="row g-4">
+        <div class="col-md-12 col-lg-4">
+            <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            @@include('./components/_form.phone-input.html')
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <input type="email" class="form-control" placeholder="Ваш e-mail" name="email" required>
+        </div>
+
+        <div class="col-12 col-3xl-8">
+            <textarea name="comments" class="form-control" rows="3" placeholder="Ваш комментарий"></textarea>
+        </div>
+
+        <div class="col-12 col-3xl-4">
+
+            <div class="row h-100">
+                <div class="ms-3xl-auto col-3xl-6 text-center text-3xl-end fw-light fs-7 lh-sm">
+                    <small>
+                        Нажимая кнопку “Отправить” вы соглашаетесь с условиями обработки персональных данных
+                    </small>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-3xl-12 mx-auto mt-3 mt-3xl-auto">
+                    <button type="submit" class="btn btn-primary w-100">
+                        Отправить
+                        <svg height="30" width="26" class="ms-3">
+                            <use xlink:href="images/sprite.svg#icons--clipboard-edit"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</form>

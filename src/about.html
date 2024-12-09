@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <!-- крошки -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Референт лист</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- соц. сети справа -->
+        @@include('_social_section.html')
+
+        <!-- Видео презентация -->
+        <section class="mt-4">
+            <div class="container">
+                <h1 class="section-title h1">О КОМПАНИИ</h1>
+
+                <div class="position-relative js-video-block">
+                    <div class="home-main__bg">
+                        <video id="homeMainVideo" autoplay muted>
+                            <source src="images/content/presentation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+
+                    <div class="home-main__inner" id="home-main__inner">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                            <b class="water-prepare__presentation__title">НПЦ ПромВодОчистка</b>
+                            <a class="js-play-video presentation__btn-link mt-4" role="button" data-target="#homeMainVideo" data-inner="#home-main__inner">
+                                наше производство
+                                <svg height="34" width="34">
+                                    <use xlink:href="images/sprite.svg#home--play"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- СОБСТВЕННОЕ ПРОИЗВОДСТВО – ПЕРЕДОВЫЕ ТЕХНОЛОГИИ -->
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="section-title h2">СОБСТВЕННОЕ ПРОИЗВОДСТВО – ПЕРЕДОВЫЕ ТЕХНОЛОГИИ</h2>
+            </div>
+
+            <div class="container">
+                <p>
+                    Компания ООО «НПЦ ПромВодОчистка» является не только официальным дилером в России ряда зарубежных
+                    концернов по оборудованию очистки воды и регулирующей арматуры, но и сама производит передовое
+                    оборудование для очистки воды и сточных вод, таких марок как «ПВО», «ГЦ», «РКМ», «АКВ» и еще более
+                    10 различных типов.
+                </p>
+                <p>
+                    Оборудование собственного производства является эталоном надежности и качества, а также включает в
+                    себя комплектующие лучших мировых и отечественных брендов. Компания имеет несколько производственных
+                    площадок для изготовления и сборки оборудования очистки воды и сточных вод. Ввиду постоянного
+                    развития различных направлений производственных мощностей, компания имеет возможность изготавливать
+                    оборудование из различных металлов и пластиков, что позволяет обеспечить необходимые технологические
+                    параметры по химической стойкости оборудования и оптимизировать стоимость конечного изделия.
+                </p>
+            </div>
+
+            <div class="mt-5 position-relative overflow-hidden pb-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 col-lg-3 position-relative mt-3 mt-md-5 pt-md-3">
+                            <div class="feature__card feature__card-top feature__card-sm-rigth">
+                                <div class="feature__card__head"></div>
+                                <strong class="text-info mt-md-3">750+</strong>
+                                <span>проектов</span>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-top">
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 position-relative mt-3 mt-md-5 pt-md-3">
+                            <div class="feature__card feature__card-top feature__card-sm-rigth">
+                                <div class="feature__card__head"></div>
+                                <strong class="text-info mt-md-3">15</strong>
+                                <span>лет опыт</span>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-top">
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 position-relative mt-3 mt-md-5 pt-md-3">
+                            <div class="feature__card feature__card-top feature__card-sm-rigth">
+                                <div class="feature__card__head"></div>
+                                <strong class="text-info mt-md-3">70</strong>
+                                <span>квалифицированных
+                                    сотрудников </span>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-top feature__card__hr-md-reverted">
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 position-relative mt-3 mt-md-5 pt-md-3">
+                            <div class="feature__card feature__card-top feature__card-sm-rigth">
+                                <div class="feature__card__head"></div>
+                                <strong class="text-info mt-md-3">5000+</strong>
+                                <span>отгружено единиц оборудования</span>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-top feature__card__hr-md-reverted">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши услуги -->
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="section-title h2">Наши услуги</h2>
+
+                <div>
+                    <p>
+                        Предприятие на протяжении многих лет сотрудничает с ведущими отечественными и зарубежными
+                        научно-исследовательскими институтами и университетами, что позволяет решать самые сложные
+                        задачи, связанные с очисткой питьевой воды и сточных вод. Компания готова предложить типовые
+                        установки или индивидуальные системы для решения проблем с очисткой воды как для частного
+                        сектора (поселки, жилые массивы), так и для крупных промышленных объектов (заводы, фабрики,
+                        производственные комплексы).
+                    </p>
+                    <p>
+                        Компания ООО «НПЦ ПромВодОчистка» успешно внедряет новые технологии и современное оборудование,
+                        что позволяет качественно решать вопросы экологии и безопасности жизнедеятельности человека.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="row g-4 feature__cards-numirated justify-content-center justify-content-3xl-start">
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Проведение инженерных расчетов, разработка
+                                и согласование проекта
+
+                            </span>
+                            <h5 class="about-feauture__card__number">1</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Проектирование технологии очистки
+                                и оборудования природных и сточных вод
+                            </span>
+                            <h5 class="about-feauture__card__number">2</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Разработка требуемых установок водоснабжения и водоотведения
+                            </span>
+                            <h5 class="about-feauture__card__number">3</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Внесение изменений в уже существующие очистные установки
+                            </span>
+                            <h5 class="about-feauture__card__number">4</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Разработка оптимальных режимов работы технологических схем, оборудования и сооружений
+                            </span>
+                            <h5 class="about-feauture__card__number">5</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Монтаж и пуско-наладка произведенного оборудования
+                            </span>
+                            <h5 class="about-feauture__card__number">6</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Гарантийное и сервисное обслуживание
+                            </span>
+                            <h5 class="about-feauture__card__number">7</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Научно-консультативная и методическая помощь специалистов
+                            </span>
+                            <h5 class="about-feauture__card__number">8</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 col-3xl-3">
+                        <div class="card about-feauture__card">
+                            <span class="about-feauture__card__text d-block">
+                                Доставка оборудования
+                                по России, экспорт
+                                в любую страну мира
+                            </span>
+                            <h5 class="about-feauture__card__number">9</h5>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Референт лист -->
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="section-title h2">Референт лист</h2>
+            </div>
+
+            <div class="container pb-4">
+                <p>
+                   Научно-Производственный Центр Промышленной Очистки Воды (ООО «НПЦ ПромВодОчистка») имеет богатый опыт в области внедрения инновационных разработок в системах водоснабжения и водоотведения.
+                </p>
+                <p>
+                    Предприятие реорганизовано в самостоятельное юридическое лицо в 2006 году, ранее отдел Водоподготовки и Очистки сточных вод НПП Альтернатива (предприятие существует с 2001 года в сфере энергетики, проектных, строительных, монтажных, пусконаладочных, ремонтных работ для нефте- и газотранспортных предприятий РФ).
+                </p>
+            </div>
+
+            @@include('_map.html')
+
+        </section>
+
+        <!-- Информация для клиента -->
+        <section class="mt-4">
+            <div class="container">
+                <h2 class="section-title h2">Информация для клиента</h2>
+            </div>
+
+            <div class="container pb-4">
+                <p>
+                    Компания "НПЦ ПромВодОчистка" работает только с юридическими лицами. Все заказы оплачиваются по выставленному счету путем перевода денежных средств 
+                    по безналичному расчету. Компания может работать с физическими лицами при условии оплаты оборудования и услуг компании по безналичному расчету через ИП. 
+                    Для получения счета отправьте реквизиты Вашей компании по электронной почте info+1179671@prom-water.ru
+                </p>
+
+                <p>
+                    Согласно стандартным условиям договора Заказчик самостоятельно забирает оплаченное оборудование со склада "НПЦ ПромВодОчистка", который находится по адресу: 
+                    г. Нижний Новгород, ул. Яблоневая, 20. Перед отгрузкой оборудования необходимо согласовать день и время отгрузки со специалистом, который сопровождает сделку. Также "НПЦ ПромВодОчистка" может отправить груз в любую точку РФ транспортной компанией, согласовав стоимость отправки груза с Заказчиком.  
+
+                </p>
+            </div>
+
+            <div class="container mt-3">
+                <h4 class="section-title h4">РЕКВИЗИТЫ КОМПАНИИ</h4>
+
+                <div class="row g-3 g-lg-4">
+
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-info text-white w-100 h-100 fs-6 fw-light">
+                            <span>Карта партнера</span>
+                            <svg height="34" width="25" class="ms-2 ms-lg-3 flex-shrink-0">
+                                <use xlink:href="images/sprite.svg#icons--file_jpg"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-info text-white w-100 h-100 fs-6 fw-light">
+                            <span>Карта партнера (редактируемая)</span>
+                            <svg height="34" width="25" class="ms-2 ms-lg-3 flex-shrink-0">
+                                <use xlink:href="images/sprite.svg#icons--file_word"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-info text-white w-100 h-100 fs-6 fw-light">
+                            <span>Регистация товарного знака</span>
+                            <svg height="34" width="25" class="ms-2 ms-lg-3 flex-shrink-0">
+                                <use xlink:href="images/sprite.svg#icons--file_jpg"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Отзывы наших партнеров -->
+        <section class="mt-5 pt-3">
+            <div class="container">
+                <h2 class="section-title h2">Отзывы наших партнеров</h2>
+            </div>
+
+            <div class="container mt-4">
+
+                <div class="row g-3 g-lg-4" id="feedback-list">
+
+                    <div class="col-lg-6">
+                        <div class="card feedback__card h-100">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="images/about/doc-1.jpg" data-fancybox="about-doc">
+                                        <img class="w-100" src="images/about/doc-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="feedback__title">ООО «Азнакай сэте»</span>
+                                    <p class="feedback__content">От лица компании ООО «Азнакай сэте» выражаем благодарность подрядчику в лице ООО «НПЦ ПромВодОчистка» за качественную работу по производству и поставке установки обратного осмоса ПВО-RO-7-12610_20-E/T.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card feedback__card h-100">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="images/about/doc-1.jpg" data-fancybox="about-doc">
+                                        <img class=" w-100" src="images/about/doc-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="feedback__title">УМУП “Ульяновскводоканал”</span>
+                                    <p class="feedback__content">
+                                        В 2019 г. Общество с ограниченной ответственностью «Научно Производственный центр промышленной очистки воды» произвело поставку и подбор регулирующей арматуры для УМУП «Ульяновскводоканал»: трех регуляторов давления «после себя» РКМ-01-О ДУ 100 Ру 16 
+                                        и одного регулятора давления «после себя» РКМ-01-О ДУ 150 Ру 16. Часть оборудования приобретена и смонтировано, работает исправно, без нареканий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card feedback__card h-100">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="images/about/doc-1.jpg" data-fancybox="about-doc">
+                                        <img class=" w-100" src="images/about/doc-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="feedback__title">ООО «Азнакай сэте»</span>
+                                    <p class="feedback__content">От лица компании ООО «Азнакай сэте» выражаем благодарность подрядчику в лице ООО «НПЦ ПромВодОчистка» за качественную работу по производству и поставке установки обратного осмоса ПВО-RO-7-12610_20-E/T.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card feedback__card h-100">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="images/about/doc-1.jpg" data-fancybox="about-doc">
+                                        <img class=" w-100" src="images/about/doc-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="feedback__title">УМУП “Ульяновскводоканал”</span>
+                                    <p class="feedback__content">
+                                        В 2019 г. Общество с ограниченной ответственностью «Научно Производственный центр промышленной очистки воды» произвело поставку и подбор регулирующей арматуры для УМУП «Ульяновскводоканал»: трех регуляторов давления «после себя» РКМ-01-О ДУ 100 Ру 16 
+                                        и одного регулятора давления «после себя» РКМ-01-О ДУ 150 Ру 16. Часть оборудования приобретена и смонтировано, работает исправно, без нареканий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <a role="button" class="show-more-link mx-auto js-show-more" data-rows="1" data-per-show="1" data-target="#feedback-list">
+                        <span>показать еще</span>  
+                        <svg height="25" width="16" class="ms-3">
+                            <use xlink:href="images/sprite.svg#icons--down_arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

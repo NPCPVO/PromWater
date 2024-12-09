@@ -1,0 +1,463 @@
+
+<form action="" class="js-ajax-form h-100">
+    <div class="row g-3 g-md-4">
+
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Название организации" name="name" required>
+        </div>
+
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="ФИО" name="name" required>
+        </div>
+
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Должность контактного лица" name="name" required>
+        </div>
+
+        <div class="col-md-4">
+            @@include('./components/_form.phone-input.html')
+        </div>
+
+        <div class="col-md-4">
+            <input type="email" class="form-control" placeholder="Электронная почта" name="email" required>
+        </div>
+
+        <div class="col-md-4">
+            <input type="email" class="form-control" placeholder="Населенный пункт" name="email" required>
+        </div>
+
+        <div class="col-12">
+            <input type="email" class="form-control" placeholder="Объект внедрения установки" name="email" required>
+        </div>
+
+    </div>
+
+    <h5 class="section-title h5 mt-5 mb-4">Источник питающей воды:</h5>
+    
+    <div class="row g-4">
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-1",
+                "text": "Муниципальный водопровод",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-2",
+                "text": "Скважина",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-3",
+                "text": "Оборотная вода",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-4",
+                "text": "Технологическая вода",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-5",
+                "text": "Морская вода",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-6",
+                "text": "Сточная вода",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-7",
+                "text": "Поверхностный источник",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "1-8",
+                "class": "other-checkbox",
+                "attributes": "data-for=\"#other-source\"",
+                "text": "Другой источник",
+            })
+
+            <div class="other-checkbox__field mt-3 d-none" id="other-source">
+                <input type="text" class="form-control" placeholder="Источник" name="email" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 g-4">
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Требуемая производительность
+                <i class="icon-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Необходимая производительность по подготовленной воде.">?</i>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-7 col-xl-8">
+                    <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+                </div>
+                <div class="col-md-5 col-xl-4">
+                    <select class="select w-100 h-100 border-0 py-2" name="brand">
+                        <option class="filter-element">м³ / сутки</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Температура воды
+                <i class="icon-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Необходимая производительность по подготовленной воде.">?</i>
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Диаметр трубопроводов подключения
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+                <span class="ms-2">мм</span>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Материал трубопровода
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Температура в помещении
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Режим работы установки
+            </div>
+            <select class="select w-100 border-0 py-2 select-handle" name="brand" data-enable="#period-operation" data-enable-value="1">
+                <option class="filter-element" value="2">Без перерывов</option>
+                <option class="filter-element" value="1">С перерывами</option>
+            </select>
+        </div>
+
+        <div class="col-12 col-lg-6" id="period-operation">
+            <div class="filter-params-title mb-3">
+                Период работы
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Давление воды на входе
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+    </div>
+
+    <h5 class="section-title h5 mt-5 mb-4">Использование подготовленной воды</h5>
+    
+    <div class="row g-4">
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-1",
+                "text": "Питьевое водоснабжение",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-2",
+                "text": "Пищевое производство",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-3",
+                "text": "Предварительная очистка",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-4",
+                "text": "Хозяйственно-бытовое водоснабжение",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-5",
+                "text": "Технологические цели",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-6",
+                "text": "Сброс в поверхностные источники",
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-7",
+                "text": "Энергетическое оборудование"
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-8",
+                "text": "Сброс в МУП-коллектор"
+            })
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "2-9",
+                "class": "other-checkbox",
+                "attributes": "data-for=\"#other-use\"",
+                "text": "Другое",
+            })
+
+            <div class="other-checkbox__field mt-3 d-none" id="other-use">
+                <input type="text" class="form-control" placeholder="Введите ваш вариант" name="email" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 g-4">
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Описание технологической схемы водоподготовки
+                <i class="icon-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Необходимая производительность по подготовленной воде.">?</i>
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Дополнительные требования
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Расположение оборудования
+            </div>
+            <select class="select w-100 border-0 py-2" name="brand">
+                <option class="filter-element">Помещение существующее</option>
+            </select>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Требуемая степень автоматизации
+            </div>
+            <select class="select w-100 border-0 py-2" name="brand">
+                <option class="filter-element">Автоматическое управление</option>
+            </select>
+        </div>
+        
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Диаметр трубопроводов подключения
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control text-center" placeholder="Длина" name="name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control text-center" placeholder="Ширина" name="name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control text-center" placeholder="Высота" name="name" required>
+                    </div>
+                </div>
+                <span class="ms-2 text-center">мм</span>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <h5 class="section-title h5 mt-5 mb-4">Сброс стоков после установки</h5>
+    
+    <div class="row g-4">
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "3-1",
+                "text": "Общественная канализация",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "3-2",
+                "text": "Ливневая канализация",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "3-3",
+                "text": "Септик",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "3-4",
+                "text": "Сточная вода",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            <div class="h-100 d-flex flex-column">
+                <div class="mb-3">
+                    @@include('./components/_form.checkbox.html', {
+                        "name": "checkbox",
+                        "id": "3-8",
+                        "class": "other-checkbox",
+                        "attributes": "data-for=\"#discharge-limitations\"",
+                        "text": "Существуют ограничения по составу сброса",
+                    })
+                </div>
+
+                <div class="other-checkbox__field mt-auto d-none" id="discharge-limitations">
+                    <input type="text" class="form-control" placeholder="Укажите ограничения" name="email" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            <div class="h-100 d-flex flex-column">
+                <div class="mb-3">
+                    @@include('./components/_form.checkbox.html', {
+                        "name": "checkbox",
+                        "id": "3-9",
+                        "class": "other-checkbox",
+                        "attributes": "data-for=\"#other-discharge\"",
+                        "text": "Другой способ сброса",
+                    })
+                </div>
+
+                <div class="other-checkbox__field mt-auto d-none" id="other-discharge">
+                    <input type="text" class="form-control" placeholder="Введите способ сброса" name="email" required>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h5 class="section-title h5 mt-5 mb-4">Монтаж планируется осуществить</h5>
+    
+    <div class="row g-4">
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "4-1",
+                "text": "силами Заказчика",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "4-2",
+                "text": "силами Поставщика",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "4-3",
+                "text": "требуется пусконаладка",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "4-4",
+                "text": "силами ген. подрядчика",
+            })
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+            @@include('./components/_form.checkbox.html', {
+                "name": "checkbox",
+                "id": "4-5",
+                "text": "требуется шефмонтаж",
+            })
+        </div>
+
+    </div>
+
+    <div class="row mt-5 g-4">
+        
+        <div class="col-12 col-lg-6">
+            <div class="filter-params-title mb-3">
+                Сроки планируемого ввода в эксплуатацию
+            </div>
+            <input type="text" class="form-control" placeholder="Введите значение" name="name" required>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="h-100 d-flex flex-column">
+                <label for="file" class="form-control text-center file-input-label mt-auto">
+                    Прикрепить файл
+                </label>
+                
+                <input class="d-none js-file-input" type="file" name="file" id="file">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="d-flex flex-column align-items-center mt-4">
+        <button type="submit" class="btn btn-primary w-75">
+            Отправить
+            <svg height="30" width="26" class="ms-3">
+                <use xlink:href="images/sprite.svg#icons--clipboard-edit"></use>
+            </svg>
+        </button>
+
+        <div class="text-center mt-3 fw-light fs-6 lh-sm">
+            <small>
+                Нажимая кнопку “Отправить” вы соглашаетесь с условиями обработки персональных данных
+            </small>
+        </div>
+
+    </div>
+
+</form>

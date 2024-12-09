@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <!-- крошки -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Промышленные системы обратного осмоса</li>
+
+                </ol>
+            </div>
+        </nav>
+
+        <!-- соц. сети справа -->
+        @@include('_social_section.html')
+
+        <!-- Видео презентация -->
+        <section class="mt-4">
+            <div class="container">
+                <h1 class="section-title h1">Производитель установок обратного осмоса</h1>
+
+                <div class="position-relative js-video-block">
+                    <div class="home-main__bg">
+                        <video id="homeMainVideo" autoplay muted>
+                            <source src="images/content/presentation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+    
+                    <div class="home-main__inner" id="home-main__inner">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                            <b class="water-prepare__presentation__title">НПЦ ПромВодОчистка</b>
+                            <a class="js-play-video presentation__btn-link mt-4" role="button" data-target="#homeMainVideo" data-inner="#home-main__inner">
+                                наше производство
+                                <svg height="34" width="34">
+                                    <use xlink:href="images/sprite.svg#home--play"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Почему доверяют нашим системам -->
+
+        <section class="mt-5 pt-md-3">
+            <div class="container">
+                <h2 class="section-title h2">Почему доверяют нашим системам</h2>
+            </div>  
+
+            <div class="position-relative overflow-hidden">
+                <div class="container">
+                    <div class="row gy-3 feature__cards-numirated">
+    
+                        <div class="col-md-6 col-xl-4 position-relative mt-3 mt-md-5 py-md-3">
+                            <div class="feature__card feature__card-top feature__card-numirated">
+                                <h5 class="feature__card__number">1</h5>
+                                <b class="fs-6 d-block mb-3">Гарантия качества</b>
+                                <p>
+                                    Используем комплектующие отечественных 
+                                    и зарубежных заводов-производителей, 
+                                    а несколько ступеней проверки на этапе изготовления обеспечивает надежность нашего оборудования.
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-reverted feature__card__hr-top">
+                        </div>
+    
+                        <div class="col-md-6 col-xl-4 position-relative mt-3 mt-md-5 py-md-3">
+                            <div class="feature__card feature__card-top feature__card-numirated">
+                                <h5 class="feature__card__number">2</h5>
+                                <b class="fs-6 d-block mb-3">Понятная установка</b>
+                                <p>
+                                    Затраты на монтаж и пусконаладку 
+                                    не обязательны, если квалификация ваших сотрудников соответствует требованиям. Техническая документация позволит подключить и запустить установку самостоятельно с сохранением гарантии
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-reverted feature__card__hr-top"> 
+                        </div>
+
+                        <div class="col-md-6 col-xl-4 position-relative mt-xl-5 py-xl-3">
+                            <div class="feature__card feature__card-top feature__card-numirated">
+                                <h5 class="feature__card__number">3</h5>
+                                <b class="fs-6 d-block mb-3">Оптимальные сроки производства</b>
+                                <p>
+                                    Комплектующие всегда в наличии. Два больших склада обеспечивают безостановочное производство систем обратного осмоса. Срок отгрузки типового оборудования малой производительности 10-15 рабочих дней. Сроки реализации больших проектов от 50 м3/ч от обращения до запуска — 60-70 рабочих дней.
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-reverted feature__card__hr-top"> 
+                        </div>
+    
+                        <div class="col-md-6 col-xl-4 position-relative mb-xl-5 pb-xl-3">
+                            <div class="feature__card feature__card-numirated">
+                                <h5 class="feature__card__number">4</h5>
+                                <b class="fs-6 d-block mb-3">Снижение затрат в эксплуатации</b>
+                                <p>
+                                    Работа систем не требует вмешательства. Автоматика заменяет рабочую силу, а также снижает нагрузку на оборудование, что 
+                                    в свою очередь увеличивает срок службы 
+                                    и экономит расходы на электроэнергию.
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-md-reverted"> 
+                        </div>
+
+                        <div class="col-md-6 col-xl-4 position-relative mb-md-5 pb-md-3">
+                            <div class="feature__card feature__card-numirated">
+                                <h5 class="feature__card__number">5</h5>
+                                <b class="fs-6 d-block mb-3">Индивидуальный подход</b>
+                                <p>
+                                    Выполняем проекты любой сложности. Подберём качество материалов, исходя 
+                                    из условий эксплуатации, отправим на ваш объект специалиста на шефмонтажу или группу инженеров для наладки не только обратного осмоса, но и всего комплекса водоподготовки
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-md-reverted"> 
+                        </div>
+
+                        <div class="col-md-6 col-xl-4 position-relative mb-md-5 pb-md-3">
+                            <div class="feature__card feature__card-numirated">
+                                <h5 class="feature__card__number">6</h5>
+                                <b class="fs-6 d-block mb-3">Отсутствие переплат</b>
+                                <p>
+                                    В поставках комплектующих нет посредников, а значит нет лишних наценок. Мы — официальные представители зарубежных заводов-изготовителей: INGE (Германия), AMIAD (Израиль), DOROT (Израиль), Romacon (Нидерланды) и других.
+                                </p>
+                            </div>
+                            <hr class="feature__card__hr feature__card__hr-md-reverted"> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Конфигуратор обратного осмоса -->
+        <section class="mt-5">
+            
+            <div class="container">
+                <h1 class="section-title h1">Конфигуратор обратного осмоса</h1>
+            </div>
+
+            @@include('_calculator.html')
+
+        </section>
+        
+        <!-- Референт лист -->
+        <section class="mt-5 pt-md-3 pb-3">
+                    
+            <div class="container">
+                <h2 class="section-title h2 mb-1">Референт лист</h2>
+            </div>
+            <div class="container">
+      
+                <div class="referent-list-more__wrap">
+
+                    <div id="referent-list-more-container">
+                        @@include('_referent_list.html')
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a role="button" class="show-more-link mx-auto js-show-more" data-rows="1" data-per-show="1" data-target="#referent-list-more-container">
+                            <span>показать еще</span>  
+                            <svg height="25" width="16" class="ms-3">
+                                <use xlink:href="images/sprite.svg#icons--down_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

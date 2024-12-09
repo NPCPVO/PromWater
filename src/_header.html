@@ -1,0 +1,284 @@
+<header class="header">
+    <div class="bg-white">
+        <div class="container py-2">
+            <div class="d-flex justify-content-between gap-0 gap-md-4 position-relative">
+                <div class="flex-column w-100">
+                   
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="header__logo d-flex align-items-center order-0">
+                            <a href="/" class="h-100">
+                                <img src="images/favicon.png" alt="logo" height="56">
+                            </a>
+                            <a href="/about.html" class="">
+                                <strong class="d-none d-lg-block">НПЦ ПромВодОчистка</strong>
+                                <small class="d-none d-lg-block">научно-приозводственный центр промышленной очистки воды</small>
+                            </a>
+                        </div>
+
+                        <a role="alertdialog" class="header__link header__link-location order-1 order-lg-2 search-off" data-bs-toggle="modal" data-bs-target="#selectCity"> 
+                            <svg height="20" width="18">
+                                <use xlink:href="images/sprite.svg#header--map_point"></use>
+                            </svg>
+    
+                            <span class="header__link-text dropdown-toggle d-none d-fhd-inline">
+                                Петропавловск-Камчатский
+                            </span>
+                        </a>
+                        
+                        <div class="header__search order-2 order-lg-3 search-off">
+                            <button class="header__search-button search-off">
+                                <svg height="20" width="20">
+                                    <use xlink:href="images/sprite.svg#icons--search"></use>
+                                </svg>
+                            </button>
+                            <div class="header__search-wrap search-off">
+                                <input type="search" class="header__search-input" placeholder="Начните ввод">
+                                <button class="header__search-close">
+                                    <svg height="20" width="20" >
+                                        <use xlink:href="images/sprite.svg#header--close" class="icon-close"></use>
+                                        <use xlink:href="images/sprite.svg#icons--spiner" class="icon-spiner"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="mailto:info+1165979@prom-water.ru" target="_blank" class="header__link order-3 order-lg-4 search-off">
+                            <svg height="20" width="25">
+                                <use xlink:href="images/sprite.svg#header--email"></use>
+                                </svg>
+    
+                            <span class="header__link-text d-none d-xxl-inline">
+                                info+1165979@prom-water.ru
+                            </span>
+                        </a>
+    
+                        <a href="tel:+7 (831) 200-38-20" class="header__link justify-content-md-end order-4 order-lg-5 search-off">
+                            <svg height="20" width="20">
+                                <use xlink:href="images/sprite.svg#header--phone"></use>
+                            </svg>
+                            <span class="header__link-text header__link-phone d-none d-md-inline">
+                                +7 (831) 200-38-20
+                            </span>
+                        </a>
+
+                        <div class="d-none d-lg-flex header__lang text-dark me-3 skiptranslate order-5 order-lg-last js-lang-selector search-off">
+                            <span class="lang-en active">ENG</span>
+                            <span class="lang-ru">РУС</span>
+                        </div>
+
+                        <button class="navbar-toggler navbar__open-menu order-last order-lg-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg class="me-lg-2" height="18" width="24">
+                                <use xlink:href="images/sprite.svg#icons--burger"></use>
+                            </svg>
+                            <span class="d-none d-lg-inline">Меню</spanс>
+                        </button>
+                        
+                    </div>
+    
+                </div>
+            </div>
+            <div class="search-result scrollable-y">
+                <hr>
+                <div class="search-result__list">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top header-menu" id="menuOffcanvas">
+        <div class="container h-100">
+
+            <div class="header-menu__head d-flex justify-content-between mb-4 mt-2 w-100">
+                <div class="header__logo d-flex align-items-center col-6 col-lg-4">
+                    <a href="/" class="h-100 flex-shrink-0">
+                        <img src="images/favicon.png" alt="logo" height="52">
+                    </a>
+                    <a href="/" class="">
+                        <strong class="d-none d-md-block">НПЦ ПромВодОчистка</strong>
+                        <small class="d-none d-md-block">научно-приозводственный центр промышленной очистки воды</small>
+                    </a>
+                </div>
+
+                <div class="header-menu__title col-lg-4 d-none d-lg-flex align-items-center justify-content-center">
+                    Меню сайта
+                </div>
+
+                <div class="col-6 col-lg-4 d-flex justify-content-end align-items-center">
+                    <div class="d-lg-none header-menu__lang text-dark me-3 skiptranslate js-lang-selector">
+                        <span>ENG</span> / <span class="active">РУС</span>
+                    </div>
+    
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg height="30" width="30">
+                            <use xlink:href="images/sprite.svg#header--close"></use>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="header-menu__inner position-relative">
+                <div class="row my-md-auto" id="header-menu-subject">
+                    <div class="col-12 col-lg-5 col-3xl-4 mb-2 mb-xl-3">
+                        <a class="header-menu__toggler no-anchor-link" data-bs-toggle="collapse" href="#menu_mobile-collapse-1" role="button" aria-expanded="false" aria-controls="menu_mobile-collapse-1">
+                            Решения
+                        </a>
+                    </div>
+    
+                    <div class="col-lg-7 col-3xl-8"></div>
+                    <div class="collapse offset-lg-5 offset-3xl-4 col-lg-7 col-3xl-8 header-menu__wrap" id="menu_mobile-collapse-1" data-bs-parent="#header-menu-subject">
+                        <div class="row mx-0">
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-5 col-3xl-4 mb-2 mb-xl-3">
+                        <a class="header-menu__toggler no-anchor-link" data-bs-toggle="collapse" href="#menu_mobile-collapse-2" role="button" aria-expanded="false" aria-controls="menu_mobile-collapse-2">
+                            Оборудование для очистки сточных вод
+                        </a>
+                    </div>
+    
+                    <div class="col-lg-7 col-3xl-8"></div>
+                    <div class="collapse offset-lg-5 offset-3xl-4 col-lg-7 col-3xl-8 header-menu__wrap" id="menu_mobile-collapse-2" data-bs-parent="#header-menu-subject">
+                        <div class="row mx-0">
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/solution.html">Системы обратного осмоса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<!-- Preloader Popup -->
+<!-- <div id="preloader" class="popup-wrap">
+    <img src="images/header/logo.svg" alt="">
+
+    <div class="preload-text mt-4 mb-3">
+        <svg width="500" viewBox="0 0 530 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 22.2L6.65 22.3C7.11667 25.1667 8.91667 26.6 12.05 26.6H26.7C30 26.6 31.65 25.2833 31.65 22.65C31.65 21.65 31.25 20.75 30.45 19.95C29.65 19.15 28.4 18.75 26.7 18.75H12.55V12.7H27C28.4667 12.7 29.5333 12.3667 30.2 11.7C30.8333 11.0667 31.15 10.3333 31.15 9.5C31.15 8.76667 30.85 8.05 30.25 7.35C29.65 6.65 28.6333 6.3 27.2 6.3H12.5C10.9 6.3 9.7 6.6 8.9 7.2C8.1 7.8 7.51667 8.73333 7.15 10H0.6C1 6.93333 2.2 4.53333 4.2 2.8C6.23333 1.03333 8.88333 0.149998 12.15 0.149998H28.05C31.5167 0.149998 34.15 0.999998 35.95 2.7C37.75 4.4 38.65 6.56666 38.65 9.2C38.65 10.3667 38.3167 11.5667 37.65 12.8C36.9833 14.0333 36.0333 15.0167 34.8 15.75C36.1667 16.5167 37.2 17.5167 37.9 18.75C38.6 19.9833 38.95 21.2333 38.95 22.5C38.95 25.3 37.9667 27.6833 36 29.65C34.0333 31.6167 31.1833 32.6 27.45 32.6H11.85C8.18333 32.6 5.31667 31.6833 3.25 29.85C1.11667 27.9833 0.0333334 25.4333 0 22.2Z" fill="#ECEDF3"/>
+            <path d="M113.747 32.6H105.897L102.997 26.7H79.2473L76.3473 32.6H68.4473L85.4973 0H96.9473L113.747 32.6ZM100.097 20.9L92.7973 5.9H89.4973L82.1473 20.9H100.097Z" fill="#ECEDF3"/>
+            <path d="M149.836 32.6L142.686 32.5V14.25C142.686 10.1833 144.02 6.78333 146.686 4.05C149.32 1.35 152.52 0 156.286 0H180.436V5.95H158.536C157.47 5.95 156.47 6.1 155.536 6.4C154.603 6.7 153.686 7.2 152.786 7.9C151.92 8.56667 151.203 9.56667 150.636 10.9C150.103 12.1667 149.836 13.7 149.836 15.5V32.6Z" fill="#ECEDF3"/>
+            <path d="M236.524 20.3L217.474 20.25V32.55H210.424V0.0999987H236.524C238.391 0.0999987 240.04 0.399999 241.474 0.999999C242.907 1.6 244.057 2.4 244.924 3.4C245.824 4.43333 246.457 5.5 246.824 6.6C247.224 7.73333 247.424 8.93333 247.424 10.2C247.424 12.8667 246.507 15.2167 244.674 17.25C242.84 19.2833 240.124 20.3 236.524 20.3ZM235.774 5.9H217.474V14.4H235.774C237.307 14.4 238.457 13.9667 239.224 13.1C239.99 12.2333 240.374 11.25 240.374 10.15C240.374 9.05 239.99 8.06667 239.224 7.2C238.457 6.33333 237.307 5.9 235.774 5.9Z" fill="#ECEDF3"/>
+            <path d="M305.621 0.149998L312.671 0.2V19.4C312.671 23.5 311.371 26.75 308.771 29.15C306.171 31.55 303.037 32.75 299.371 32.75H281.721V26.8H298.321C302.554 26.8 304.921 24.8167 305.421 20.85H289.121C284.821 20.85 281.421 19.5833 278.921 17.05C276.421 14.4833 275.171 11.0833 275.171 6.85V0.149998H282.271V7.35C282.271 9.91667 283.021 11.8167 284.521 13.05C285.987 14.2833 288.071 14.9 290.771 14.9H305.621V0.149998Z" fill="#ECEDF3"/>
+            <path d="M344.238 22.2L350.888 22.3C351.355 25.1667 353.155 26.6 356.288 26.6H370.938C374.238 26.6 375.888 25.2833 375.888 22.65C375.888 21.65 375.488 20.75 374.688 19.95C373.888 19.15 372.638 18.75 370.938 18.75H356.788V12.7H371.238C372.705 12.7 373.772 12.3667 374.438 11.7C375.072 11.0667 375.388 10.3333 375.388 9.5C375.388 8.76667 375.088 8.05 374.488 7.35C373.888 6.65 372.872 6.3 371.438 6.3H356.738C355.138 6.3 353.938 6.6 353.138 7.2C352.338 7.8 351.755 8.73333 351.388 10H344.838C345.238 6.93333 346.438 4.53333 348.438 2.8C350.472 1.03333 353.122 0.149998 356.388 0.149998H372.288C375.755 0.149998 378.388 0.999998 380.188 2.7C381.988 4.4 382.888 6.56666 382.888 9.2C382.888 10.3667 382.555 11.5667 381.888 12.8C381.222 14.0333 380.272 15.0167 379.038 15.75C380.405 16.5167 381.438 17.5167 382.138 18.75C382.838 19.9833 383.188 21.2333 383.188 22.5C383.188 25.3 382.205 27.6833 380.238 29.65C378.272 31.6167 375.422 32.6 371.688 32.6H356.088C352.422 32.6 349.555 31.6833 347.488 29.85C345.355 27.9833 344.272 25.4333 344.238 22.2Z" fill="#ECEDF3"/>
+            <path d="M416.186 0.0999987H423.236V12.7H437.286C438.719 12.7 439.902 12.5167 440.836 12.15C441.769 11.7833 442.552 11.0333 443.186 9.9L448.736 0.0999987H456.586L449.586 12.5C448.552 14.3333 447.419 15.4833 446.186 15.95C447.986 16.2833 449.386 17.4167 450.386 19.35L457.586 32.65H449.736L443.986 21.9C443.319 20.7333 442.469 19.9 441.436 19.4C440.402 18.9 438.852 18.65 436.786 18.65H423.286V32.6H416.186V0.0999987Z" fill="#ECEDF3"/>
+            <path d="M529.763 32.6H521.913L519.013 26.7H495.263L492.363 32.6H484.463L501.513 0H512.963L529.763 32.6ZM516.113 20.9L508.813 5.9H505.513L498.163 20.9H516.113Z" fill="#ECEDF3"/>
+        </svg>
+    </div>
+    
+    <span class="preload-percent-text">
+        <span id="preload-percent">0</span>%
+    </span>
+
+</div> -->
+ <!-- end  -->
