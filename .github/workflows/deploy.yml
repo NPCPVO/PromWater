@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Setup key
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/PromWater"
+      - run: chmod 600 "$HOME/.ssh/PromWater"
+      - run: CXXFLAGS="--std=c++14"
+      - run: npm ci
+      - run: gulp build
+      # Deploy
+      - run: cd dist && rsync --progress -e "ssh -i $HOME/.ssh/PromWater -o StrictHostKeyChecking=no" --archive --compress --delete . u0569369@vip164.hosting.reg.ru:~/www/prom-water.ru/templates/PromWater/compiled

@@ -1,0 +1,55 @@
+<form action="" class="js-ajax-form feed-back__from">
+    <div class="row g-4">
+
+        <div class="col-3xl-8">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+                  </div>
+          
+                  <div class="col-md-4">
+                    @@include('./components/_form.phone-input.html')
+                  </div>
+          
+                  <div class="col-md-4">
+                      <input type="email" class="form-control" placeholder="Ваш e-mail" name="email" required>
+                  </div>
+          
+                  <div class="col-12">
+                      <textarea name="comments" class="form-control" rows="5" placeholder="Ваш комментарий"></textarea>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-3xl-4">
+            <div class="row gy-3">
+                <div class="ms-auto col-md-6 col-lg-4 col-3xl-12 order-md-2 order-3xl-1">
+                    <label for="order-file-1" class="form-control text-center file-input-label ">
+                        Загрузить файл
+                    </label>
+                    
+                    <input class="d-none js-file-input" type="file" name="file" id="order-file-1">
+                </div>
+
+                <div class="col-12 ms-3xl-auto col-3xl-7 px-4 px-md-0 text-center text-3xl-end fw-light fs-7 lh-sm order-md-1 order-3xl-2 mt-3xl-5">
+                    <small>
+                        Нажимая кнопку “Отправить” вы соглашаетесь с условиями обработки персональных данных
+                    </small>
+                </div>
+    
+                <div class="me-auto col-md-6 col-lg-4 col-3xl-12 order-md-3">
+                    <button type="submit" class="btn btn-primary w-100">
+                        Отправить
+                        <svg height="30" width="26" class="ms-3">
+                            <use xlink:href="images/sprite.svg#icons--clipboard-edit"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</form>

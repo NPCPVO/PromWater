@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <!-- крошки -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Референт лист</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- соц. сети справа -->
+        @@include('_social_section.html')
+
+        <!-- ПРОЕКТИРОВАНИЕ ОЧИСТНЫХ СООРУЖЕНИЙ -->
+        <section class="mt-4">
+            <div class="container">
+                <h1 class="section-title h1">Референт лист</h1>
+            </div>
+
+            <div class="mt-4">
+                @@include('_map.html')
+            </div>
+        </section>
+
+        <!-- Референт лист -->
+        <section class="mt-5 pb-3">
+                    
+            <div class="container">
+                <div class="d-md-flex flex-wrap nav mt-3">
+                    <a class="tab-link me-md-4 mb-3 mb-md-4 active"><span>Все</a>
+                    <a class="tab-link me-md-4 mb-3 mb-md-4"><span>Водоподготовка</span></a>
+                    <a class="tab-link me-md-4 mb-3 mb-md-4"><span>Арматура</a>
+                    <a class="tab-link me-md-4 mb-3 mb-md-4"><span>Проектирование</span></a>
+                    <a class="tab-link me-md-4 mb-3 mb-md-4"><span>Очистка сточных вод</span></a>
+                    <a class="tab-link me-md-4 mb-3 mb-md-4"><span>Строительство</span></a>
+
+                </div>
+            </div>
+
+            <div class="container">
+      
+                <div class="referent-list-more__wrap">
+
+                    <div class="referent-list-with-first-active-item" id="referent-list-more-container">
+                        @@include('_referent_list.html')
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <a role="button" class="show-more-link mx-auto js-show-more" data-rows="2" data-per-show="1" data-target="#referent-list-more-container">
+                            <span>показать еще</span>  
+                            <svg height="25" width="16" class="ms-3">
+                                <use xlink:href="images/sprite.svg#icons--down_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

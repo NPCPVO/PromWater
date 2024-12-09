@@ -1,0 +1,42 @@
+.home-main{
+    &__inner{
+        padding: 60px 54px 60px 54px;
+    }
+    h1{
+        font-size: 34px;
+        line-height: 55px;
+    }
+}
+.four-slide__slider .slider-thumb{
+    .slick-slide {
+        img{
+            border-radius: 20px;
+        }
+        margin: 12px 6px 0;
+        // padding: 15px;
+    }
+}
+.referent__prop__name{
+    font-size: 14px;
+}
+.referent__prop__value{
+    font-size: 14px;
+}
+
+.clear-scheme__item{
+
+    width: calc(80% / 3);
+}
+.clear-scheme__arrow{
+    width: calc(20% / 2);
+}
+
+.feedback__card{
+    padding: 41px 21px;
+}
+
+.accordion-item{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}

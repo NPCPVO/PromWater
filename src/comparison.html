@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Промышленные системы обратного осмоса</li>
+
+                </ol>
+            </div>
+        </nav>
+
+        @@include('_social_section.html')
+
+        <section>
+            <div class="container d-flex flex-wrap">
+                 <button class="comparison__arrow comparison__prev">
+                    <svg height="30" width="20">
+                        <use xlink:href="images/sprite.svg#icons--slider_arrow"></use>
+                    </svg>
+                </button>
+
+                <button class="comparison__arrow comparison__next">
+                    <svg height="30" width="20">
+                        <use xlink:href="images/sprite.svg#icons--slider_arrow"></use>
+                    </svg>
+                </button>
+
+                <!-- Не дает кнопкам слиться в одну строку с таблицей сравнения -->
+                <div class="w-100"></div> 
+
+                <div class="scrollable-x comparison__wrap">
+                    <div class="row flex-nowrap comparison__products">
+                        @@include('_comparison_item.html')
+                        @@include('_comparison_item.html')
+                        @@include('_comparison_item.html')
+                        @@include('_comparison_item.html')
+                        @@include('_comparison_item.html')
+
+                        <div class="col-3xl-3 col-lg-4 col-md-6">
+                            <div class="h-100 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-outline-secondary w-100 px-2" >
+                                    <span>Добавить товар</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="comparison__table" >
+                        <div class="row flex-nowrap comparison__table-titles">
+                            <div class="col-3xl-3 col-lg-4 col-md-6">
+                                <div>Сфера применения</div>
+                            </div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div></div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div></div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div></div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div></div></div>
+                        </div>
+                        
+                        <div class="row flex-nowrap comparison__table-values">
+                            <div class="col-3xl-3 col-lg-4 col-md-6" data-comparison-id="10"><div>Показатель</div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div>Единицы измерения</div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div>ВОЗ</div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div>USEPA</div></div>
+                            <div class="col-3xl-3 col-lg-4 col-md-6"><div>ЕС</div></div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-nowrap my-5">
+                        <div class="col-3xl-3 col-lg-4 col-md-6" data-comparison-id="10">
+                            <div class="product-card__price d-flex mb-3">
+                                <span class="fw-light">Цена:</span>
+                        
+                                <div class="ms-auto">
+                                    от&ensp;
+                                    <span>
+                                        100 000
+                                    </span>
+                    
+                                    <svg height="16" width="18">
+                                        <use xlink:href="images/sprite.svg#icons--rub"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-2">
+                                <div class="col-xl-12">
+                                    <button class="btn btn-primary w-100 px-2" data-bs-toggle="offcanvas"
+                                        data-bs-target="#order-product-offcanvas">
+                                        <span>Оставить заявку</span>
+                                        <svg height="30" width="26" class="ms-3">
+                                            <use xlink:href="images/sprite.svg#icons--clipboard-edit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    @@include('_footer.html')
+
+</body>
+
+</html>

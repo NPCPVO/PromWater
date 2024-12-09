@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+
+    @@include('_header.html')
+
+    <main class="site-content">
+        <div class="container">
+            <hr class="header__hr">
+        </div>
+        
+        @@include('_social_section.html')
+
+        <section class="home-main">
+            <div class="container pt-4">
+                <div class="position-relative js-video-block">
+                    <div class="home-main__bg">
+                        <div class="youtube-player" id="homeMainVideo" data-youtube="6H_kIv4fuyc"></div>
+                        <!-- <img src="images/home/bg-1.jpg" class="home-main__poster" alt=""> -->
+                        <!-- <video id="homeMainVideo" autoplay muted>
+                            <source src="images/content/presentation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video> -->
+                    </div>
+    
+                    <div class="home-main__inner" id="home-main__inner">
+                        <h1>Производство промышленных систем водоподготовки, водоочистки и водопроводной арматуры</h1>
+                        <div class="d-flex flex-column flex-md-row align-items-start justify-content-md-between mt-auto">
+                            <a class="js-play-video presentation__btn-link" role="button" data-target="#homeMainVideo" data-inner="#home-main__inner">
+                                наше производство
+                                <svg height="34" width="34">
+                                    <use xlink:href="images/sprite.svg#home--play"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="presentation__btn-link">
+                                референт лист
+                                <svg height="34" width="34">
+                                    <use xlink:href="images/sprite.svg#home--list"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Оборудование для водоподготовки</h2>
+
+                <div class="row g-4">
+
+                    @@include('_main-catalog.html')
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Оборудование для очистки сточных вод</h2>
+
+                <div class="row g-4">
+
+                    @@include('_main-catalog-2.html')
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Какую задачу вам необходимо решить?</h2>
+
+                <div class="home-what-task">
+                    <a class="tab-link" href="/solution.html">Осветлить воду</a>
+                    <a class="tab-link" href="/solution.html">Обезжелезить воду</a>                    
+                    <a class="tab-link" href="/solution.html">Оббезаразить воду</a>
+                    <a class="tab-link" href="/solution.html">Умягчить воду</a>                    
+                    <a class="tab-link" href="/solution.html">Обессолить воду</a>                    
+                    <a class="tab-link" href="/solution.html">Очистить воду от тяжелых металлов</a>                    
+                    <a class="tab-link" href="/solution.html">Очистить воду от нефтепродуктов</a>                    
+                    <a class="tab-link" href="#">В списке нет моей задачи</a>                         
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Запорная арматура</h2>
+
+                <div class="row g-4">
+
+                    @@include('_main-catalog-3.html')
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Проектирование</h2>
+
+                <div class="row g-4">
+
+                    @@include('_main-catalog-4.html')
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Строительные и ремонтные работы -->
+        <section class="mt-5 pt-4">
+            <div class="container">
+                <h2 class="section-title h2">Строительные и ремонтные работы</h2>
+
+                <div class="row g-4">
+
+                    @@include('_main-catalog-5.html')
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Карта поставок -->
+        <section class="mt-5 pt-4 mb-3">
+            <div class="container">
+                <h2 class="section-title h2">Карта поставок</h2>
+            </div>
+
+            @@include('_map.html')
+
+
+        </section>
+
+        <!-- Сертификаты и лицензии компании -->
+        <section class="mt-5 pt-lg-4">
+            <div class="container">
+                <h2 class="section-title h2">Сертификаты и лицензии компании</h2>
+
+                <div class="sertificates-slider slider-controll position-relative">
+                    <!-- <button type="button" role="presentation" class="owl-prev"></button> -->
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <a class="sertificate-slide" href="/images/docs/sert-1_full.jpg" data-fancybox="sertificates-slider">
+                        <img class="" data-lazy="images/docs/sert-1.jpg">
+                    </a>
+                    <!-- <button type="button" role="presentation" class="owl-next"></button> -->
+                </div>
+            </div>
+
+           
+
+        </section>
+    </main>
+    
+
+    @@include('_footer.html')
+
+</body>
+
+</html>
