@@ -1043,7 +1043,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             &.soc-whatsapp {
                 color: #43d854;
             }
-           
+            &.soc-vk_video{
+                #blue{
+                    fill: #0077FF;
+                }
+                #red{
+                    fill: #FF2B42;
+                }
+            }
         }
     }
 }
