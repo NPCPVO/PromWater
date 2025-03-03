@@ -85,7 +85,7 @@ window.site.moreLoader = {
                         .slick('refresh');
                 }
 
-                site.common.scrollTo($firstElementOfFirstRow);
+                //site.common.scrollTo($firstElementOfFirstRow);
                 site.sliders.init();
 
                 if ($('.js-hidden', $container).length == 0) {
