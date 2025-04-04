@@ -1855,6 +1855,70 @@ input[type="checkbox"]:checked + .filter_tab{
     }
 }
 
+.cases_line{
+    .cases_block{
+        background: #fff;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, .04);
+        border-radius: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        &:before{
+            content:"";
+            width: 100%;
+            height: 50px;
+            background-color: #0d3f74;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease-in 0.3s;
+            z-index: 1;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.5;
+            color: rgba(0, 160, 227);
+            display: block;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .text{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.5;
+            display: block;
+            text-align: center;
+            padding: 0 5px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    a{
+        top: 0;
+        left: 0;
+        z-index: 5;
+        &:hover{
+            + .cases_block:before{
+                height: 100% ;
+            }
+            + .cases_block>.text{
+                color: #fff;
+            }
+        }
+    }
+}
+
+
 //
 // Solution Page
 //
