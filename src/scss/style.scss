@@ -1284,11 +1284,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         position: relative;
         border-radius: 20px;
         span{
-            padding: 18px 20px 48px 30px;
+            padding: 18px 10px 30px;
             border-radius: 20px;
             position: absolute;
             width: 100%;
             bottom: 0;
+            height: 210px;
+            display: flex;
+            align-items: center;
         }
         img{
             object-fit: cover;
@@ -3429,7 +3432,6 @@ a.product__prop:hover {
                     align-items: center;
                     justify-content: center;
                     border-radius: 20px;
-                    flex-shrink: 0;
                 }
                 .body{
                     .title{
