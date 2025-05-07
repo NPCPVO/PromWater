@@ -431,4 +431,12 @@
         justify-content: flex-end;
     }
 }
-
+.design{
+    &_advantag{
+        .wrapp{
+            .block{
+                column-gap: 15px;
+            }
+        }
+    }
+}
