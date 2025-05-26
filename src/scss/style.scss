@@ -3298,6 +3298,7 @@ a.product__prop:hover {
     }
     &_imgblock{
         .wrapp{
+            background-color: $bg-color-3;
             border-radius: 20px;
             overflow: hidden;
             padding-right: 0;
@@ -3311,7 +3312,6 @@ a.product__prop:hover {
             }
             .row{
                 margin-bottom: 30px;
-                background-color: $bg-color-3;
             }
             img{
                 border-radius: 20px;
