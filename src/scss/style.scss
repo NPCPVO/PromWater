@@ -2351,8 +2351,7 @@ a.product__prop:hover {
 }
 
 .inline-banner {
-    background: #D1F2FF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background: $bg-color-3;
     border-radius: 20px;
     text-decoration: none;
     position: relative;
@@ -2406,6 +2405,8 @@ a.product__prop:hover {
         .down-arrow-icon {
             transform: rotate(-90deg) translateY(10px) scale(1.05);
         }
+        background-color: $primary;
+
     }
 }
 
@@ -2615,8 +2616,6 @@ a.product__prop:hover {
 }
 
 .product__slider {
-    border-top: 2px solid $bg-color-4;
-    border-bottom: 2px solid $bg-color-4;
     .slick-track {
         display: flex;
         align-items: center;
