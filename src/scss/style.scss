@@ -1882,7 +1882,6 @@ input[type="checkbox"]:checked + .filter_tab{
         background: $bg-color-3;
         border-radius: 20px;
         text-align: center;
-        text-transform: uppercase;
         padding-top: 50px;
         padding-bottom: 30px;
         position: relative;
@@ -1913,7 +1912,8 @@ input[type="checkbox"]:checked + .filter_tab{
             + .cases_block{
                 background-color: $primary;
             }
-            + .cases_block>.h2{
+            + .cases_block>.h2,
+            + .cases_block>.text{
                 color: #fff;
             }
         }
