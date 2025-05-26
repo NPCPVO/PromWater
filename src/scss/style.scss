@@ -3298,10 +3298,10 @@ a.product__prop:hover {
     }
     &_imgblock{
         .wrapp{
-            background-color: $bg-color-3;
             border-radius: 20px;
             overflow: hidden;
             padding-right: 0;
+            background-color: $bg-color-3;
             .left{
                 padding: 60px 90px 20px 50px;
                 p{
