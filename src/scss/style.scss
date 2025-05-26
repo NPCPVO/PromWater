@@ -3313,6 +3313,12 @@ a.product__prop:hover {
             img{
                 border-radius: 20px;
             }
+            .row{
+                margin-bottom: 30px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
         }
         .btn{
             font-weight: 600;
