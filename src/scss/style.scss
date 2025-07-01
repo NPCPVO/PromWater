@@ -3441,6 +3441,12 @@ $satis_light: #A9EDE2;
                 border-color: $satis_prime;
             }
         }
+        .btn-primary{
+            background-color: $satis_second;
+            &:hover{
+                background-color: $satis_prime;
+            }
+        }
         .feed-back__from{
             background-color: rgba(169, 237, 226, 0.5);
             .checkbox+label.form__checkbox-box{
