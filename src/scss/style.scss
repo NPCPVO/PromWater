@@ -3430,6 +3430,23 @@ $satis_light: #A9EDE2;
         span{
             text-decoration: underline $satis_prime dashed;
         }
+        &:not(.loading):hover{
+            color: $satis_second;
+        }
+    }
+    .questionary{
+        .btn{
+            border: 3px solid #a9ede2;
+            &:focus{
+                border-color: $satis_prime;
+            }
+        }
+        .feed-back__from{
+            background-color: rgba(169, 237, 226, 0.5);
+            .checkbox+label.form__checkbox-box{
+                border-color: $satis_prime;
+            }
+        }
     }
 }
 
