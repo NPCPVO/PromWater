@@ -3427,6 +3427,9 @@ $satis_light: #A9EDE2;
     }
     .show-more-link{
         color: $satis_prime;
+        span{
+            text-decoration: underline $satis_prime dashed;
+        }
     }
 }
 
