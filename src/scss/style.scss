@@ -3419,5 +3419,11 @@ $satis_light: #A9EDE2;
     .design_banner {
         background-color: $satis_prime;
     }
+    .tab-link{
+        border-color: $satis_light;
+        &.active{
+            border-color: $satis_prime;
+        }
+    }
 }
 
