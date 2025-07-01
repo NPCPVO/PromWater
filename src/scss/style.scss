@@ -3442,8 +3442,10 @@ $satis_light: #A9EDE2;
     }
     .btn-primary{
         background-color: $satis_second;
+        border-color: $satis_second;
         &:hover{
             background-color: $satis_prime;
+            border-color: $satis_prime;
         }
     }
     .select{
