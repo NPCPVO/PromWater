@@ -3446,6 +3446,9 @@ $satis_light: #A9EDE2;
             background-color: $satis_prime;
         }
     }
+    .select{
+        border-color: $satis_second;
+    }
     .questionary{
 
         .feed-back__from{
@@ -3455,6 +3458,18 @@ $satis_light: #A9EDE2;
             }
             .checkbox:checked+label{
                 background: $satis_prime;
+            }
+        }
+    }
+    .constructor_fag{
+        background-color: $satis_second;
+        .accordion-body{
+            background-color: $satis_light;
+        }
+        .accordion-header{
+            border-color: $satis_light;
+            &::after{
+                background: url("/images/icons/icons--arrow_long_green.svg") center/15px auto no-repeat $satis_light!important;
             }
         }
     }
