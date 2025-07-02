@@ -3509,5 +3509,10 @@ $satis_light: #A9EDE2;
             color: $satis_prime
         }
     }
+    .category-card.card_design{
+        span{
+            background-color: $satis_light;
+        }
+    }
 }
 
