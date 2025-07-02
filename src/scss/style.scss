@@ -3479,8 +3479,11 @@ $satis_light: #A9EDE2;
         &::before{
             border-color: $satis_second;
         }
-        &__header{
+        &::after{
             background-color: $satis_second;
+        }
+        &__head{
+            background-color: $satis_light;
         }
         .text-info{
             color: $satis_prime !important;
