@@ -3491,6 +3491,17 @@ $satis_light: #A9EDE2;
         &__hr{
             border-color: $satis_second;
         }
+        &-with-bg{
+            svg{
+                color:$satis_light;
+            }
+            a{
+                color: $satis_prime;
+            }
+        }
+    }
+    .tag-link{
+        border-color: $satis_second;
     }
 }
 
