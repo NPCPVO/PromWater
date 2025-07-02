@@ -3503,5 +3503,11 @@ $satis_light: #A9EDE2;
     .tag-link{
         border-color: $satis_second;
     }
+    .inline-banner{
+        &:hover{
+            background-color: $satis_light;
+            color: $satis_prime
+        }
+    }
 }
 
