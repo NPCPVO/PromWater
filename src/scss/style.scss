@@ -3475,5 +3475,19 @@ $satis_light: #A9EDE2;
             }
         }
     }
+    .feature__card{
+        &::before{
+            border-color: $satis_second;
+        }
+        &__header{
+            background-color: $satis_second;
+        }
+        .text-info{
+            color: $satis_prime !important;
+        }
+        &__hr{
+            border-color: $satis_second;
+        }
+    }
 }
 
