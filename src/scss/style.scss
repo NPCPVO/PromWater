@@ -1267,13 +1267,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 // Main Catalog
 //
 .category-card {
-    padding: 50px 30px;
+    padding: 20px 30px;
     font-size: 22px;
     line-height: 34px;
     color: $text-color;
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-height: 350px;
 
     img {
         margin-top: auto;
