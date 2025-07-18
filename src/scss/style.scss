@@ -3422,6 +3422,17 @@ $satis_light: #A9EDE2;
 .satis{
     .design_banner {
         background-color: $satis_prime;
+        .left{
+            row-gap: 20px;
+            .text-block{
+                row-gap: 20px;
+            }
+        }
+        .img{
+            img{
+                max-height: 400px;
+            }
+        }
     }
     .tab-link{
         border-color: $satis_light;
