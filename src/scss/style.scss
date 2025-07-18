@@ -3426,6 +3426,8 @@ $satis_light: #A9EDE2;
             row-gap: 20px;
             .text-block{
                 row-gap: 20px;
+                display: flex;
+                flex-direction: column;
             }
         }
         .img{
