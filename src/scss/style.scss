@@ -3538,14 +3538,21 @@ $satis_light: #A9EDE2;
     .block{
         padding: 5px;
         border: 1px solid $primary;
+        border-radius: 5px;
+        max-width: 120px;
         .name{
             font-size: 12px;
+            margin-bottom: 5px;
+            line-height: 1.2;
         }
         img{
             max-width: 100px;
+            margin-bottom: 5px;
         }
         .prise{
             font-size: 12px;
+            margin-bottom: 0;
+            line-height: 1.2;
         }
     }
 }
