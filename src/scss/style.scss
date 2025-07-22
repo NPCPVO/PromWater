@@ -3534,4 +3534,19 @@ $satis_light: #A9EDE2;
         }
     }
 }
+.trade_links_wrapp{
+    .block{
+        padding: 5px;
+        border: 1px solid $primary;
+        .name{
+            font-size: 12px;
+        }
+        img{
+            max-width: 100px;
+        }
+        .prise{
+            font-size: 12px;
+        }
+    }
+}
 
