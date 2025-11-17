@@ -2530,12 +2530,18 @@ a.product__prop:hover {
     line-height: 34px;
     text-transform: uppercase;
     color: $primary;
+    font-weight: 600;
+    position: relative;
+    padding-left: 10px;
 }
 .referent__title:before{
     content: "";
     height: 100%;
-    width: 3px;
+    width: 5px;
     background-color: $primary;
+    display: block;
+    position: absolute;
+    left: 0;
 
 }
 .referent__prop {
