@@ -2526,11 +2526,18 @@ a.product__prop:hover {
 }
 
 .referent__title {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 34px;
     text-transform: uppercase;
+    color: $primary;
 }
+.referent__title:before{
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: $primary;
 
+}
 .referent__prop {
     margin-top: 12px;
     display: flex;
