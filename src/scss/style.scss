@@ -2577,14 +2577,16 @@ a.product__prop:hover {
 }
 
 .referent__description {
-    background: #F3F8FB;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f7941d;
     border-radius: 20px;
     padding: 35px 40px;
 
     p {
         padding-bottom: 0;
     }
+}
+referent__description__title{
+    color: $primary;
 }
 
 .slider-progress {
