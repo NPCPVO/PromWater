@@ -1014,49 +1014,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         height: 40px;
         box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1);
         border-radius: 14px;
-        color: rgba(0, 160, 227, 0.5);
+
         transition: .4s;
         background: #fff;
         margin: 24px 0;
 
+        &.soc-instagram {
+            color: #c13584;
+        }
+
+        &.soc-facebook {
+            color: #3b5998;
+        }
+
+        &.soc-youtube {
+            color: #cd201f;
+        }
+
+        &.soc-vk {
+            color: #597da3;
+        }
+
+        &.soc-telegram {
+            color: #0088cc;
+        }
+
+        &.soc-whatsapp {
+            color: #43d854;
+        }
+        &.soc-vk_video{
+            #blue{
+                fill: #0077FF;
+            }
+            #red{
+                fill: #FF2B42;
+            }
+        }
+        &.soc-max{
+            color: #007AFF;
+        }
         &:hover {
             transform: scale(1.2);
             color: #0a4788;
 
-            &.soc-instagram {
-                color: #c13584;
-            }
 
-            &.soc-facebook {
-                color: #3b5998;
-            }
-
-            &.soc-youtube {
-                color: #cd201f;
-            }
-
-            &.soc-vk {
-                color: #597da3;
-            }
-
-            &.soc-telegram {
-                color: #0088cc;
-            }
-
-            &.soc-whatsapp {
-                color: #43d854;
-            }
-            &.soc-vk_video{
-                #blue{
-                    fill: #0077FF;
-                }
-                #red{
-                    fill: #FF2B42;
-                }
-            }
-            &.soc-max{
-                color: #007AFF;
-            }
         }
     }
 }
