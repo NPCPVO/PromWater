@@ -407,7 +407,7 @@ body {
 }
 
 .social-section.social > * {
-    display: none;
+    //display: none;
 }
 .social-section.social{
     top: unset;
@@ -415,6 +415,9 @@ body {
     right: unset;
     left: 12px;
     transform: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5px;
 }
 
 .go-top{
