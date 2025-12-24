@@ -9,6 +9,7 @@ $info: #00A0E3;
 $primary: #0C54A0;
 $secondary: #F3F8FB;
 $input-placeholder-color: #C4C4C4;
+$orange: #F7941D;
 
 
 @import "./fonts.scss";
@@ -3589,4 +3590,39 @@ $satis_light: #A9EDE2;
 }
 .block_border_blue{
     border-color: #02315E;
+}
+
+.servise{
+    .design_banner{
+        background-color: $orange;
+        .btn{
+            background-color: #ffffff;
+            border-color: $orange;
+            &:hover{
+                background-color: $orange;
+                border-color: #ffffff;
+            }
+        }
+    }
+    .servis_list{
+        .nav{
+            .btn{
+                background-color: #ffffff;
+                border-color: $orange;
+                color: $orange;
+                &.active{
+                    background-color: $orange;
+                    color: #ffffff;
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .btn{
+                    background-color:$orange;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
 }
