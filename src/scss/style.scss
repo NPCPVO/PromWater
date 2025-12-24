@@ -3625,5 +3625,17 @@ $satis_light: #A9EDE2;
                 }
             }
         }
+        .line{
+            display: block;
+            width: 2px;
+            background-color: $orange;
+        }
+        @media(max-width: 991px){
+            .line{
+                width: 80%;
+                height: 2px;
+                margin: 0 auto;
+            }
+        }
     }
 }
