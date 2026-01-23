@@ -3318,6 +3318,7 @@ a.product__prop:hover {
         .left{
             .btn{
                 padding: 15px 80px;
+                border: none;
             }
         }
     }
@@ -3445,6 +3446,7 @@ $satis_light: #A9EDE2;
 .satis{
     .design_banner {
         background-color: $satis_prime;
+
         .left{
             row-gap: 20px;
             .text-block{
