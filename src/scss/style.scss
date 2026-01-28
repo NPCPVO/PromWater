@@ -3463,6 +3463,7 @@ $satis_light: #A9EDE2;
     }
     .tab-link{
         border-color: $orange;
+        border-width: 1px;
         &.active{
             border-color: $satis_prime;
         }
