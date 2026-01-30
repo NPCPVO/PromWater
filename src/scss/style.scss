@@ -2028,6 +2028,13 @@ input[type="checkbox"]:checked + .filter_tab{
     font-size: 24px;
 }
 
+.product-card{
+    .product__comparison{
+        border-color: $orange;
+        border-width: 1px;
+    }
+}
+
 .product-card__slider {
     display: flex;
     align-items: center;
@@ -2097,8 +2104,6 @@ input[type="checkbox"]:checked + .filter_tab{
 
 .product__comparison{
     font-size: 16px;
-    border-color: $orange;
-    border-width: 1px;
 }
 
 .comparison-remove{
