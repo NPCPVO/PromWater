@@ -15,9 +15,13 @@ window.site.offcanvas = {
             const $el = $(this);
             const $triggerEl = $(e.relatedTarget);
             const productId = $triggerEl.data('product-id');
+            const productCel = $triggerEl.data('product-cel')
 
             if (productId) {
                 $el.find('input[name="product"]').val(productId);
+            }
+            if (productCel){
+                $el.data('track', productCel);
             }
         }
 
