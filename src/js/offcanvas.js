@@ -21,6 +21,7 @@ window.site.offcanvas = {
                 $el.find('input[name="product"]').val(productId);
             }
             if (productCel){
+                console.log($el)
                 $el.data('track', productCel);
             }
         }
