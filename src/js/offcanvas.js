@@ -22,7 +22,7 @@ window.site.offcanvas = {
             }
             if (productCel){
                 console.log($el)
-                $el.data('track', productCel);
+                $el.find('form').data('track', productCel);
             }
         }
 
