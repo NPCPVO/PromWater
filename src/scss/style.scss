@@ -2102,6 +2102,12 @@ input[type="checkbox"]:checked + .filter_tab{
     margin-bottom: 12px;
 }
 
+.product-card__prop:first-of-type{
+    .product-card__prop__name, .product-card__prop__value{
+        font-weight: bold;
+    }
+}
+
 .product__comparison{
     font-size: 16px;
 }
