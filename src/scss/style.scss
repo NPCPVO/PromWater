@@ -1305,6 +1305,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             object-fit: cover;
         }
     }
+    small{
+        p{
+            text-align: center;
+            :last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .projects {
