@@ -1308,9 +1308,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     small{
         p{
             text-align: center;
-            :last-of-type{
-                margin-bottom: 0;
-            }
+        }
+        p:last-of-type{
+            margin-bottom: 0;
         }
     }
 }
