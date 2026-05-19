@@ -536,6 +536,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 a{
                     color: #ffffff;
                 }
+                .header__link-text{
+                    color: #ffffff;
+                }
             }
         }
     }
@@ -1283,7 +1286,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         }
     }
 }
-
+.main--banner{
+    top: -117px;
+    margin-bottom: -117px;
+}
 //
 // Main Catalog
 //
