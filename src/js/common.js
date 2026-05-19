@@ -1,3 +1,4 @@
+
 import $ from "jquery";
 window.jQuery = window.$ = $;
 // no-sort
@@ -29,6 +30,7 @@ window.site.common = {
         initProductFilters();
         initGoogleTranslate();
         initTopBanners();
+        initMainHeaderWhite();
 
         require('./comparison');
         require('./sliders');
@@ -43,6 +45,29 @@ window.site.common = {
         function initTopBanners() {
             if (document.querySelectorAll('.top-banner').length)
                 require.async('./top-banner');
+        }
+
+        function initMainHeaderWhite() {
+            const header = document.querySelector('.header--main');
+            const banner = document.querySelector('.main--banner');
+
+            if (!header || !banner) return;
+
+            const toggleHeaderWhiteClass = () => {
+                const headerBottom = header.getBoundingClientRect().bottom;
+                const bannerBottom = banner.getBoundingClientRect().bottom;
+
+                if (bannerBottom <= headerBottom) {
+                    header.classList.remove('white');
+                } else {
+                    header.classList.add('white');
+                }
+            };
+
+            toggleHeaderWhiteClass();
+
+            window.addEventListener('scroll', toggleHeaderWhiteClass, { passive: true });
+            window.addEventListener('resize', toggleHeaderWhiteClass);
         }
 
         function initFancybox() {
@@ -318,6 +343,8 @@ window.site.common = {
 
         }
 
+
+
     },
 
     getViewport: function () {
@@ -408,3 +435,5 @@ window.site.common = {
 $(function () {
     site.common.init();
 });
+
+
