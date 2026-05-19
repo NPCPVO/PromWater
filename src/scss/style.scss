@@ -1292,7 +1292,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .main--banner{
     top: -137px;
     margin-bottom: -137px;
-    img{
+    .img{
         &:after{
             content: "";
             display: block;
