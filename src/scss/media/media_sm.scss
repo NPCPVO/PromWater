@@ -36,6 +36,16 @@
     }
 }
 
+.main--banner{
+    .main--banner_text{
+        padding-left: 10px;
+        padding-right: 10px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
 .home-what-task{
     grid-template-columns: repeat(1, 1fr);
     // gap: 15px 20px;
