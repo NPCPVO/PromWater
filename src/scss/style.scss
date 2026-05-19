@@ -523,6 +523,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
             }
         }
     }
+
+    &.header--main{
+        &.white{
+            .header_bg{
+                background-color: rgba(0,0,0,0.4);
+            }
+        }
+    }
 }
 
 .header__link {
