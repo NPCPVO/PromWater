@@ -53,14 +53,21 @@ window.site.common = {
 
             if (!header || !banner) return;
 
+            const headerBg = header.querySelector('.bg-white');
             const toggleHeaderWhiteClass = () => {
                 const headerBottom = header.getBoundingClientRect().bottom;
                 const bannerBottom = banner.getBoundingClientRect().bottom;
 
                 if (bannerBottom <= headerBottom) {
                     header.classList.remove('white');
+                    if (headerBg) {
+                        headerBg.classList.remove('bg-white');
+                    }
                 } else {
                     header.classList.add('white');
+                    if (headerBg) {
+                        headerBg.classList.add('bg-white');
+                    }
                 }
             };
 
