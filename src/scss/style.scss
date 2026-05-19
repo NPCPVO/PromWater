@@ -1292,6 +1292,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .main--banner{
     top: -137px;
     margin-bottom: -137px;
+    .main--banner_text{
+        padding: 137px 0 0 0;
+    }
 }
 //
 // Main Catalog
