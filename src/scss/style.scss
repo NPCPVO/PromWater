@@ -527,7 +527,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     &.header--main{
         &.white{
             .header_bg{
-                background-color: rgba(0,0,0,0.4);
+                //background-color: rgba(0,0,0,0.4);
                 .header__logo{
                     small{
                         color: #ffffff;
@@ -538,6 +538,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 }
                 .header__link-text{
                     color: #ffffff;
+                }
+                .menu_line{
+                    padding: 20px 0 0 0;
                 }
             }
         }
@@ -1287,8 +1290,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 .main--banner{
-    top: -117px;
-    margin-bottom: -117px;
+    top: -137px;
+    margin-bottom: -137px;
 }
 //
 // Main Catalog
