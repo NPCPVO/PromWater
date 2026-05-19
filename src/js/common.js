@@ -407,5 +407,5 @@ window.site.common = {
 
 $(function () {
     site.common.init();
-    console.log(`%cBy Herrington © Artix (https://artix.pw).\nGitHub: https://github.com/TVGneRd\nVK: https://vk.com/dima_seledkin\nTG: https://t.me/dima_seledkin`, 'font-size:140%;font-weight:700;');
+    //console.log(`%cBy Herrington © Artix (https://artix.pw).\nGitHub: https://github.com/TVGneRd\nVK: https://vk.com/dima_seledkin\nTG: https://t.me/dima_seledkin`, 'font-size:140%;font-weight:700;');
 });
