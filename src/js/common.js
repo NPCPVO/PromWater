@@ -53,20 +53,20 @@ window.site.common = {
 
             if (!header || !banner) return;
 
-            const headerBg = header.querySelector('.bg-white');
+            const headerBg = header.querySelector('.header_bg');
             const toggleHeaderWhiteClass = () => {
-                const headerBottom = header.getBoundingClientRect().bottom;
+                const headerTop  = header.getBoundingClientRect().top;
                 const bannerBottom = banner.getBoundingClientRect().bottom;
 
-                if (bannerBottom <= headerBottom) {
+                if (bannerBottom <= headerTop ) {
                     header.classList.remove('white');
                     if (headerBg) {
-                        headerBg.classList.remove('bg-white');
+                        headerBg.classList.add('bg-white');
                     }
                 } else {
                     header.classList.add('white');
                     if (headerBg) {
-                        headerBg.classList.add('bg-white');
+                        headerBg.classList.remove('bg-white');
                     }
                 }
             };
