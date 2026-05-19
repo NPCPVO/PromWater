@@ -55,10 +55,10 @@ window.site.common = {
 
             const headerBg = header.querySelector('.header_bg');
             const toggleHeaderWhiteClass = () => {
-                const headerTop  = header.getBoundingClientRect().top;
+                const headerBottom  = header.getBoundingClientRect().bottom;
                 const bannerBottom = banner.getBoundingClientRect().bottom;
 
-                if (bannerBottom <= headerTop ) {
+                if (bannerBottom <= headerBottom ) {
                     header.classList.remove('white');
                     if (headerBg) {
                         headerBg.classList.add('bg-white');
