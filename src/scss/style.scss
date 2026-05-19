@@ -527,7 +527,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     &.header--main{
         &.white{
             .header_bg{
-                //background-color: rgba(0,0,0,0.4);
+                background-color: rgba(0,0,0,0.5);
                 .header__logo{
                     small{
                         color: #ffffff;
@@ -1305,8 +1305,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .main--banner_text{
         padding: 137px 0 0 0;
         h2{
-            font-size: 60px;
+            font-size: 66px;
             font-weight: bolder;
+        }
+        .text{
+            font-size: 30px
         }
     }
 }
