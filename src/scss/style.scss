@@ -1257,6 +1257,27 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin-bottom: 60px;
     }
 }
+.main--about{
+    .feature__card_wrapp{
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .feature__card{
+        border: 2px solid #254080;
+        flex-basis: 340px;
+        padding-left: 10px;
+        padding-right: 10px;
+        strong{
+            color: transparent !important;
+            -webkit-background-clip: text;
+            background-clip: text !important;
+            background-image: linear-gradient(-90deg, #254080 0%, #0C54A0 10%, #00A0E3 100%) !important;
+        }
+        &:after, &:before{
+            content: none !important;
+        }
+    }
+}
 
 .presentation__btn-link {
     color: #fff !important;
