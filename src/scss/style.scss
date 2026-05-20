@@ -1264,7 +1264,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
     .feature__card{
         border: 2px solid #254080;
-        flex-basis: 340px;
+        flex-basis: calc(50% - 15px);
         padding-left: 10px;
         padding-right: 10px;
         strong{
