@@ -1267,6 +1267,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         flex-basis: calc(50% - 15px);
         padding-left: 10px;
         padding-right: 10px;
+        height: auto;
         strong{
             color: transparent !important;
             -webkit-background-clip: text;
