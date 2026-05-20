@@ -101,3 +101,7 @@
 .clear-scheme__arrow{
     width: 56px;
 }
+
+.main--about .feature__card{
+    flex-basis: calc(100% - 15px);
+}
