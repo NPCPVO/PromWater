@@ -70,3 +70,6 @@
 .header-menu__wrap a{
     --link-font-size: 20px;
 }
+.main--about .feature__card{
+    flex-basis: calc(50% - 15px);
+}
