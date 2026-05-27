@@ -3642,6 +3642,7 @@ $satis_light: #A9EDE2;
     }
     .category-card.card_design{
         height: 300px;
+        justify-content: flex-end;
         span{
             background-color: $satis_prime;
             color: #ffffff;
