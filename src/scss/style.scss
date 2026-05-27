@@ -3641,11 +3641,17 @@ $satis_light: #A9EDE2;
         }
     }
     .category-card.card_design{
+        height: 300px;
         span{
             background-color: $satis_prime;
             color: #ffffff;
             height: 70px;
             padding: 10px 20px;
+        }
+        img{
+            object-fit: cover;
+            max-height: calc(100% - 70px);
+            margin-top: 0 !important;
         }
     }
 }
