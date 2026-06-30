@@ -70,7 +70,7 @@ window.site.sliders = {
                 ]
             });
 
-            $(".project_styled").not('.slick-initialized').slick({
+            $(".project_slider").not('.slick-initialized').slick({
                 lazyLoad: 'progressive',
                 slidesToShow: 6,
                 autoplay: true,
