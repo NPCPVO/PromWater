@@ -72,27 +72,27 @@ window.site.sliders = {
 
             $(".project_slider").not('.slick-initialized').slick({
                 lazyLoad: 'progressive',
-                slidesToShow: 6,
+                slidesToShow: 5,
                 autoplay: true,
                 responsive: [
 
                     {
                         breakpoint: 1920,
                         settings: {
-                            slidesToShow: 5
+                            slidesToShow: 4
                         }
                     },
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 2
                         }
                     },
 
                     {
                         breakpoint: 767,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 1
                         }
                     }
                 ]
