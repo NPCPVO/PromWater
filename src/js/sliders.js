@@ -70,6 +70,34 @@ window.site.sliders = {
                 ]
             });
 
+            $(".project_styled").not('.slick-initialized').slick({
+                lazyLoad: 'progressive',
+                slidesToShow: 6,
+                autoplay: true,
+                responsive: [
+
+                    {
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
 
             $(".four-slide__slider .slider-preview").not('.slick-initialized').slick({
                 autoplay: false,
