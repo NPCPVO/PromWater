@@ -74,6 +74,7 @@ window.site.sliders = {
                 lazyLoad: 'progressive',
                 slidesToShow: 5,
                 autoplay: true,
+                dots: true,
                 responsive: [
 
                     {
