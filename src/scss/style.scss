@@ -5084,4 +5084,292 @@ $satis_light: #A9EDE2;
         }
 
     }
+
+    .water-cleaning {
+        padding: 72px 0;
+        background: #ffffff;
+    }
+
+
+    .water-cleaning__box {
+        padding: 28px 30px 30px;
+
+        background:
+                linear-gradient(
+                                135deg,
+                                #edf8ff 0%,
+                                #f7fbfe 48%,
+                                #eef8fd 100%
+                );
+
+        border-radius: 22px;
+    }
+
+
+    /* Заголовок */
+
+    .water-cleaning__title {
+        margin: 0 0 14px;
+
+        color: #172438;
+
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+
+    /* Группы */
+
+    .water-cleaning__group {
+        margin-top: 20px;
+    }
+
+    .water-cleaning__group--ready {
+        margin-top: 26px;
+    }
+
+    .water-cleaning__group-title {
+        margin: 0 0 10px;
+
+        color: #172438;
+
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+
+    /* Карточка */
+
+    .water-solution-card {
+        position: relative;
+
+        min-height: 154px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+
+        padding: 18px 46px 18px 18px;
+
+        text-decoration: none;
+
+        color: inherit;
+
+        background: rgba(255, 255, 255, .92);
+
+        border-radius: 14px;
+
+        overflow: hidden;
+
+        transition:
+                transform .2s ease,
+                box-shadow .2s ease,
+                background-color .2s ease;
+    }
+
+    .water-solution-card:hover {
+        transform: translateY(-2px);
+
+        background: #ffffff;
+
+        box-shadow:
+                0 10px 24px
+                rgba(25, 74, 111, .08);
+    }
+
+    .water-solution-card:focus-visible {
+        outline: 2px solid #52a9df;
+        outline-offset: 3px;
+    }
+
+
+    /* Картинка */
+
+    .water-solution-card__image {
+        flex: 0 0 34%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 0;
+        height: 112px;
+    }
+
+    .water-solution-card__image img {
+        display: block;
+
+        max-width: 100%;
+        max-height: 100%;
+
+        object-fit: contain;
+    }
+
+
+    /* Текст */
+
+    .water-solution-card__content {
+        flex: 1 1 auto;
+
+        min-width: 0;
+
+        padding-left: 14px;
+    }
+
+    .water-solution-card__title {
+        margin: 0 0 8px;
+
+        color: #172438;
+
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    .water-solution-card__text {
+        margin: 0;
+
+        color: #697586;
+
+        font-size: 12px;
+        line-height: 1.45;
+    }
+
+
+    /* Широкие карточки */
+
+    .water-solution-card--wide {
+        min-height: 150px;
+    }
+
+    .water-solution-card--wide .water-solution-card__image {
+        flex-basis: 38%;
+
+        height: 116px;
+    }
+
+
+    /* Стрелка */
+
+    .water-solution-card__arrow {
+        position: absolute;
+
+        right: 12px;
+        bottom: 14px;
+
+        width: 28px;
+        height: 28px;
+
+        border: 1.5px solid #5cb0e6;
+        border-radius: 50%;
+    }
+
+    .water-solution-card__arrow::before {
+        content: "";
+
+        position: absolute;
+
+        width: 8px;
+        height: 1.5px;
+
+        left: 8px;
+        top: 12px;
+
+        background: #5cb0e6;
+
+        border-radius: 10px;
+    }
+
+    .water-solution-card__arrow::after {
+        content: "";
+
+        position: absolute;
+
+        width: 6px;
+        height: 6px;
+
+        right: 7px;
+        top: 9px;
+
+        border-top: 1.5px solid #5cb0e6;
+        border-right: 1.5px solid #5cb0e6;
+
+        transform: rotate(45deg);
+    }
+
+
+    /* Tablet */
+
+    @media (max-width: 991.98px) {
+
+        .water-cleaning {
+            padding: 56px 0;
+        }
+
+        .water-cleaning__box {
+            padding: 26px;
+        }
+
+        .water-cleaning__title {
+            font-size: 30px;
+        }
+
+        .water-solution-card {
+            min-height: 150px;
+        }
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 767.98px) {
+
+        .water-cleaning {
+            padding: 44px 0;
+        }
+
+        .water-cleaning__box {
+            padding: 22px 18px;
+
+            border-radius: 18px;
+        }
+
+        .water-cleaning__title {
+            font-size: 27px;
+        }
+
+        .water-cleaning__group-title {
+            font-size: 17px;
+        }
+
+        .water-solution-card {
+            min-height: 135px;
+
+            padding:
+                    16px
+                    44px
+                    16px
+                    14px;
+        }
+
+        .water-solution-card__image {
+            flex-basis: 32%;
+
+            height: 94px;
+        }
+
+        .water-solution-card__content {
+            padding-left: 10px;
+        }
+
+        .water-solution-card__title {
+            font-size: 14px;
+        }
+
+        .water-solution-card__text {
+            font-size: 11px;
+        }
+    }
 }
