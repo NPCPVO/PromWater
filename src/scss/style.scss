@@ -4400,4 +4400,249 @@ $satis_light: #A9EDE2;
             padding: 18px;
         }
     }
+
+    /* =========================================
+   ЭФФЕКТИВНО УДАЛЯЕМ
+   ========================================= */
+
+    .remove-block {
+        padding: 72px 0 76px;
+        background: #fff;
+    }
+
+
+    /* Заголовок */
+
+    .remove-block__title {
+        margin: 0 0 34px;
+
+        color: #1b2738;
+
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.12;
+
+        letter-spacing: -0.025em;
+    }
+
+
+    /* =========================================
+       Карточка
+       ========================================= */
+
+    .remove-card {
+        height: 100%;
+        min-height: 205px;
+
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+
+        background: #f5f9fc;
+
+        border-radius: 18px;
+
+        transition:
+                transform .25s ease,
+                background-color .25s ease;
+    }
+
+
+    .remove-card:hover {
+        transform: translateY(-3px);
+
+        background: #eff7fc;
+    }
+
+
+    /* =========================================
+       Иконки
+       ========================================= */
+
+    .remove-card__icon {
+        flex: 0 0 auto;
+
+        width: 52px;
+        height: 52px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 0 24px;
+
+        background: #e2f3fc;
+
+        border-radius: 50%;
+    }
+
+
+    /*
+     * Сам SVG используем как mask.
+     * Поэтому цвет всех иконок можно менять
+     * одной строкой background-color.
+     */
+
+    .remove-card__icon::before {
+        content: "";
+
+        width: 25px;
+        height: 25px;
+
+        display: block;
+
+        background-color: #1468a8;
+
+        -webkit-mask-image: var(--icon);
+        mask-image: var(--icon);
+
+        -webkit-mask-size: contain;
+        mask-size: contain;
+
+        -webkit-mask-position: center;
+        mask-position: center;
+
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+    }
+
+
+    /* -----------------------------------------
+       1. Продукты коррозии
+       Частицы / металл
+       ----------------------------------------- */
+
+    .remove-card__icon--corrosion {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3Ccircle cx='16.5' cy='8.5' r='2.5'/%3E%3Ccircle cx='10' cy='16' r='3'/%3E%3Ccircle cx='18' cy='17' r='1.5'/%3E%3Cpath d='M4 13h2'/%3E%3Cpath d='M14 4h1'/%3E%3Cpath d='M15 14h1'/%3E%3C/svg%3E");
+    }
+
+
+    /* -----------------------------------------
+       2. Окалина и песок
+       Зерна / частицы
+       ----------------------------------------- */
+
+    .remove-card__icon--sand {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='6' cy='8' r='1.3'/%3E%3Ccircle cx='11' cy='5.5' r='1'/%3E%3Ccircle cx='17' cy='8' r='1.5'/%3E%3Ccircle cx='8.5' cy='14' r='1.6'/%3E%3Ccircle cx='15' cy='14.5' r='1.2'/%3E%3Ccircle cx='19' cy='18' r='1'/%3E%3Cpath d='M4 19h12'/%3E%3C/svg%3E");
+    }
+
+
+    /* -----------------------------------------
+       3. Ил и взвеси
+       Частицы в воде
+       ----------------------------------------- */
+
+    .remove-card__icon--silt {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8c2.5-2 4.5 2 7 0s4.5-2 7 0 4 0 4 0'/%3E%3Cpath d='M3 14c2.5-2 4.5 2 7 0s4.5-2 7 0 4 0 4 0'/%3E%3Ccircle cx='6' cy='18' r='.8'/%3E%3Ccircle cx='12' cy='18.5' r='.8'/%3E%3Ccircle cx='18' cy='18' r='.8'/%3E%3C/svg%3E");
+    }
+
+
+    /* -----------------------------------------
+       4. Органические примеси
+       Лист
+       ----------------------------------------- */
+
+    .remove-card__icon--organic {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 4C11 4 5 8 5 14c0 3.3 2.4 5.5 5.5 5.5C17 19.5 20 12 20 4z'/%3E%3Cpath d='M6 19c3-4 6-7 11-10'/%3E%3C/svg%3E");
+    }
+
+
+    /* =========================================
+       Текст карточки
+       ========================================= */
+
+    .remove-card__content {
+        margin-top: auto;
+    }
+
+
+    .remove-card__title {
+        margin: 0 0 9px;
+
+        color: #1b2738;
+
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+
+    .remove-card__text {
+        margin: 0;
+
+        color: #667485;
+
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+
+    /* =========================================
+       TABLET
+       ========================================= */
+
+    @media (max-width: 991.98px) {
+
+        .remove-block {
+            padding: 56px 0;
+        }
+
+        .remove-block__title {
+            margin-bottom: 28px;
+
+            font-size: 36px;
+        }
+
+        .remove-card {
+            min-height: 195px;
+        }
+    }
+
+
+    /* =========================================
+       MOBILE
+       ========================================= */
+
+    @media (max-width: 767.98px) {
+
+        .remove-block {
+            padding: 44px 0;
+        }
+
+        .remove-block__title {
+            margin-bottom: 24px;
+
+            font-size: 30px;
+        }
+
+        .remove-card {
+            min-height: auto;
+
+            padding: 22px;
+
+            border-radius: 16px;
+        }
+
+        .remove-card__icon {
+            width: 48px;
+            height: 48px;
+
+            margin-bottom: 20px;
+        }
+
+        .remove-card__icon::before {
+            width: 23px;
+            height: 23px;
+        }
+
+        .remove-card__title {
+            font-size: 18px;
+        }
+
+        .remove-card__text {
+            font-size: 14px;
+        }
+    }
 }
