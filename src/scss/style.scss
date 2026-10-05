@@ -4645,4 +4645,283 @@ $satis_light: #A9EDE2;
             font-size: 14px;
         }
     }
+
+    /* =========================================
+   ДЛЯ КАКИХ ОБЪЕКТОВ ПОДОЙДУТ РЕШЕНИЯ
+   ========================================= */
+
+    .agro-objects {
+        padding: 78px 0 82px;
+        background: #f5f9fc;
+    }
+
+
+    /* Заголовок */
+
+    .agro-objects__title {
+        max-width: 760px;
+
+        margin: 0 0 36px;
+
+        color: #1b2738;
+
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.12;
+
+        letter-spacing: -0.025em;
+    }
+
+
+    /* =========================================
+       Сетка
+       ========================================= */
+
+    .agro-objects__grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 16px;
+    }
+
+
+    /* широкая карточка */
+
+    .agro-object--wide {
+        grid-column: span 2;
+    }
+
+
+    /* =========================================
+       Карточка
+       ========================================= */
+
+    .agro-object {
+        min-height: 260px;
+
+        padding: 28px;
+
+        display: flex;
+        flex-direction: column;
+
+        background: #ffffff;
+
+        border-radius: 22px;
+
+        transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+    }
+
+
+    .agro-object:hover {
+        transform: translateY(-3px);
+
+        box-shadow:
+                0 14px 35px
+                rgba(25, 69, 104, .07);
+    }
+
+
+    /* Контент */
+
+    .agro-object__content {
+        margin-top: auto;
+    }
+
+
+    .agro-object__title {
+        max-width: 440px;
+
+        margin: 0 0 10px;
+
+        color: #1b2738;
+
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+
+    .agro-object__text {
+        max-width: 520px;
+
+        margin: 0;
+
+        color: #687586;
+
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.55;
+    }
+
+
+    /* =========================================
+       ИКОНКИ
+       ========================================= */
+
+    .agro-object__icon {
+        width: 52px;
+        height: 52px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 32px;
+
+        background: #e4f3fb;
+
+        border-radius: 50%;
+    }
+
+
+    .agro-object__icon::before {
+        content: "";
+
+        display: block;
+
+        width: 25px;
+        height: 25px;
+
+        background-color: #1769a8;
+
+        -webkit-mask-image: var(--icon);
+        mask-image: var(--icon);
+
+        -webkit-mask-size: contain;
+        mask-size: contain;
+
+        -webkit-mask-position: center;
+        mask-position: center;
+
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+    }
+
+
+    /* Поля / орошение */
+
+    .agro-object__icon--field {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 20c5-5 9-7 18-9'/%3E%3Cpath d='M3 15c5-4 10-6 18-7'/%3E%3Cpath d='M3 10c5-3 10-4 18-4'/%3E%3C/svg%3E");
+    }
+
+
+    /* Теплица */
+
+    .agro-object__icon--greenhouse {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 20V10l9-6 9 6v10'/%3E%3Cpath d='M7 20v-8h10v8'/%3E%3Cpath d='M12 4v16'/%3E%3C/svg%3E");
+    }
+
+
+    /* Питомник / дерево */
+
+    .agro-object__icon--nursery {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22v-8'/%3E%3Cpath d='M7 22h10'/%3E%3Cpath d='M12 14c-4 0-7-2.4-7-6 0-2 1.3-4 3.4-4.8C9.3 1.8 10.5 1 12 1s2.7.8 3.6 2.2C17.7 4 19 6 19 8c0 3.6-3 6-7 6z'/%3E%3C/svg%3E");
+    }
+
+
+    /* Фермерское хозяйство */
+
+    .agro-object__icon--farm {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21V10l9-6 9 6v11'/%3E%3Cpath d='M7 21v-7h10v7'/%3E%3Cpath d='M9 14v7'/%3E%3Cpath d='M15 14v7'/%3E%3C/svg%3E");
+    }
+
+
+    /* Агропромышленный комплекс */
+
+    .agro-object__icon--agro {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21V9l6 3V9l6 3V7l6 3v11H3z'/%3E%3Cpath d='M7 17h2'/%3E%3Cpath d='M13 17h2'/%3E%3Cpath d='M18 17h1'/%3E%3C/svg%3E");
+    }
+
+
+    /* Капельный полив */
+
+    .agro-object__icon--drip {
+        --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6h16'/%3E%3Cpath d='M7 6v5'/%3E%3Cpath d='M17 6v5'/%3E%3Cpath d='M7 11s-2 2.5-2 4a2 2 0 0 0 4 0c0-1.5-2-4-2-4z'/%3E%3Cpath d='M17 11s-2 2.5-2 4a2 2 0 0 0 4 0c0-1.5-2-4-2-4z'/%3E%3C/svg%3E");
+    }
+
+
+    /* =========================================
+       TABLET
+       ========================================= */
+
+    @media (max-width: 991.98px) {
+
+        .agro-objects {
+            padding: 58px 0;
+        }
+
+        .agro-objects__title {
+            margin-bottom: 30px;
+
+            font-size: 36px;
+        }
+
+        .agro-objects__grid {
+            grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        }
+
+        .agro-object--wide {
+            grid-column: span 1;
+        }
+
+        .agro-object {
+            min-height: 240px;
+        }
+    }
+
+
+    /* =========================================
+       MOBILE
+       ========================================= */
+
+    @media (max-width: 767.98px) {
+
+        .agro-objects {
+            padding: 46px 0;
+        }
+
+        .agro-objects__title {
+            margin-bottom: 24px;
+
+            font-size: 30px;
+        }
+
+        .agro-objects__grid {
+            grid-template-columns: 1fr;
+
+            gap: 12px;
+        }
+
+        .agro-object {
+            min-height: auto;
+
+            padding: 22px;
+
+            border-radius: 18px;
+        }
+
+        .agro-object__icon {
+            width: 48px;
+            height: 48px;
+
+            margin-bottom: 28px;
+        }
+
+        .agro-object__icon::before {
+            width: 23px;
+            height: 23px;
+        }
+
+        .agro-object__title {
+            font-size: 19px;
+        }
+
+        .agro-object__text {
+            font-size: 14px;
+        }
+    }
 }
