@@ -3939,4 +3939,180 @@ $satis_light: #A9EDE2;
         }
 
     }
+
+    /* ==============================
+   Блок: стабильная подача воды
+   ============================== */
+
+    .agro-water-block {
+        padding: 70px 0;
+        background: #ffffff;
+    }
+
+    .agro-water-card {
+        background: #eff8ff;
+        border-radius: 28px;
+        overflow: hidden;
+    }
+
+    /* Левая часть */
+
+    .agro-water-content {
+        min-height: 440px;
+        padding: 58px 60px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .agro-water-title {
+        max-width: 620px;
+        margin: 0 0 28px;
+
+        color: #172033;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+    }
+
+    .agro-water-text {
+        max-width: 650px;
+        margin: 0 0 18px;
+
+        color: #4b5565;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.55;
+    }
+
+    /* Акцентный последний абзац */
+
+    .agro-water-result {
+        position: relative;
+
+        max-width: 650px;
+        margin: 12px 0 0;
+        padding-left: 22px;
+
+        color: #172033;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .agro-water-result::before {
+        content: "";
+        position: absolute;
+
+        top: 4px;
+        bottom: 4px;
+        left: 0;
+
+        width: 4px;
+
+        background: #1461a8;
+        border-radius: 10px;
+    }
+
+
+    /* Правая часть с фото */
+
+    .agro-water-image {
+        height: 100%;
+        min-height: 440px;
+
+        overflow: hidden;
+    }
+
+    .agro-water-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* ==============================
+       Адаптив
+       ============================== */
+
+    @media (max-width: 991.98px) {
+
+        .agro-water-block {
+            padding: 50px 0;
+        }
+
+        .agro-water-content {
+            min-height: auto;
+            padding: 44px 40px;
+        }
+
+        .agro-water-title {
+            font-size: 36px;
+        }
+
+        .agro-water-image {
+            min-height: 330px;
+            height: 330px;
+        }
+    }
+
+
+    @media (max-width: 767.98px) {
+
+        .agro-water-block {
+            padding: 36px 0;
+        }
+
+        .agro-water-card {
+            border-radius: 22px;
+        }
+
+        .agro-water-content {
+            padding: 34px 24px 38px;
+        }
+
+        .agro-water-title {
+            margin-bottom: 22px;
+
+            font-size: 30px;
+            line-height: 1.15;
+        }
+
+        .agro-water-text,
+        .agro-water-result {
+            font-size: 16px;
+        }
+
+        .agro-water-image {
+            min-height: 260px;
+            height: 260px;
+        }
+    }
+
+
+    @media (max-width: 575.98px) {
+
+        .agro-water-block .container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .agro-water-content {
+            padding: 30px 22px 34px;
+        }
+
+        .agro-water-title {
+            font-size: 27px;
+        }
+
+        .agro-water-image {
+            height: 230px;
+            min-height: 230px;
+        }
+    }
 }
