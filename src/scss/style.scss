@@ -5259,44 +5259,63 @@ $satis_light: #A9EDE2;
         right: 12px;
         bottom: 14px;
 
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
 
-        border: 1.5px solid #5cb0e6;
+        background: #e7f4fc;
+        border: none;
         border-radius: 50%;
+
+        transition:
+                background-color .2s ease,
+                transform .2s ease;
     }
+
+
+    /* линия стрелки */
 
     .water-solution-card__arrow::before {
         content: "";
 
         position: absolute;
 
-        width: 8px;
-        height: 1.5px;
+        left: 10px;
+        top: 15px;
 
-        left: 8px;
-        top: 12px;
+        width: 9px;
+        height: 2px;
 
-        background: #5cb0e6;
+        background: #54a9df;
 
-        border-radius: 10px;
+        border-radius: 2px;
     }
+
+
+    /* наконечник */
 
     .water-solution-card__arrow::after {
         content: "";
 
         position: absolute;
 
-        width: 6px;
-        height: 6px;
+        top: 12px;
+        right: 10px;
 
-        right: 7px;
-        top: 9px;
+        width: 7px;
+        height: 7px;
 
-        border-top: 1.5px solid #5cb0e6;
-        border-right: 1.5px solid #5cb0e6;
+        border-top: 2px solid #54a9df;
+        border-right: 2px solid #54a9df;
 
         transform: rotate(45deg);
+    }
+
+
+    /* hover всей карточки */
+
+    .water-solution-card:hover .water-solution-card__arrow {
+        background: #d9effb;
+        transform: translateX(2px);
     }
 
 
