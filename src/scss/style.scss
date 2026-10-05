@@ -4177,4 +4177,329 @@ $satis_light: #A9EDE2;
             font-size: 27px;
         }
     }
+
+    .agro-pollution {
+        padding: 80px 0;
+        background: #ffffff;
+    }
+
+
+    .agro-pollution-head {
+        max-width: 760px;
+        margin-bottom: 42px;
+    }
+
+
+    .agro-pollution-title {
+        margin: 0 0 16px;
+
+        color: #172033;
+
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+    }
+
+
+    .agro-pollution-subtitle {
+        margin: 0;
+
+        color: #687386;
+
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+
+    /* Карточки */
+
+    .agro-pollution-card {
+        height: 100%;
+
+        min-height: 250px;
+
+        padding: 28px;
+
+        background: #f4f9fd;
+
+        border-radius: 22px;
+
+        transition:
+                transform 0.25s ease,
+                background-color 0.25s ease;
+    }
+
+
+    .agro-pollution-card:hover {
+        transform: translateY(-4px);
+
+        background: #edf7fd;
+    }
+
+
+    .agro-pollution-card h3 {
+        margin: 24px 0 10px;
+
+        color: #172033;
+
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+
+    .agro-pollution-card p {
+        margin: 0;
+
+        color: #667085;
+
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* =============================
+       ОБЩАЯ ОСНОВА ИКОНОК
+       ============================= */
+
+    .pollution-icon {
+        position: relative;
+
+        width: 64px;
+        height: 64px;
+
+        border-radius: 50%;
+
+        background: #dceffc;
+    }
+
+
+    .pollution-icon::before,
+    .pollution-icon::after,
+    .pollution-icon span,
+    .pollution-icon span::before,
+    .pollution-icon span::after {
+        content: "";
+        position: absolute;
+    }
+
+
+    /* =============================
+       ПЕСОК
+       ============================= */
+
+    .pollution-icon--sand::before {
+        width: 7px;
+        height: 7px;
+
+        left: 17px;
+        top: 22px;
+
+        border-radius: 50%;
+
+        background: #1767a8;
+
+        box-shadow:
+                13px -5px 0 #1767a8,
+                25px 4px 0 #1767a8,
+                7px 15px 0 #1767a8,
+                23px 18px 0 #1767a8;
+    }
+
+
+    .pollution-icon--sand::after {
+        left: 13px;
+        right: 13px;
+        bottom: 15px;
+
+        height: 3px;
+
+        background: #1767a8;
+
+        border-radius: 20px;
+    }
+
+
+    /* =============================
+       ИЛ / ВЗВЕСИ
+       ============================= */
+
+    .pollution-icon--silt span {
+        left: 14px;
+        top: 18px;
+
+        width: 36px;
+        height: 28px;
+
+        border-bottom: 3px solid #1767a8;
+
+        border-radius: 0 0 50% 50%;
+    }
+
+
+    .pollution-icon--silt span::before {
+        left: 4px;
+        top: 5px;
+
+        width: 28px;
+        height: 3px;
+
+        background: #1767a8;
+
+        border-radius: 20px;
+
+        box-shadow:
+                3px 8px 0 #1767a8,
+                -1px 16px 0 #1767a8;
+    }
+
+
+    /* =============================
+       РЖАВЧИНА
+       ============================= */
+
+    .pollution-icon--rust::before {
+        width: 26px;
+        height: 26px;
+
+        left: 19px;
+        top: 19px;
+
+        border: 3px solid #1767a8;
+
+        border-radius: 50%;
+    }
+
+
+    .pollution-icon--rust::after {
+        width: 7px;
+        height: 7px;
+
+        left: 28px;
+        top: 28px;
+
+        border-radius: 50%;
+
+        background: #1767a8;
+
+        box-shadow:
+                -10px -7px 0 -1px #1767a8,
+                11px -3px 0 -1px #1767a8,
+                8px 10px 0 -1px #1767a8;
+    }
+
+
+    /* =============================
+       ОРГАНИЧЕСКИЕ ПРИМЕСИ
+       ============================= */
+
+    .pollution-icon--organic span {
+        width: 29px;
+        height: 18px;
+
+        left: 18px;
+        top: 24px;
+
+        border: 3px solid #1767a8;
+
+        border-radius:
+                100% 0
+                100% 0;
+
+        transform: rotate(-35deg);
+    }
+
+
+    .pollution-icon--organic span::before {
+        width: 3px;
+        height: 27px;
+
+        left: 13px;
+        top: -4px;
+
+        background: #1767a8;
+
+        border-radius: 10px;
+
+        transform: rotate(42deg);
+    }
+
+
+    /* =============================
+       АДАПТИВ
+       ============================= */
+
+    @media (max-width: 991.98px) {
+
+        .agro-pollution {
+            padding: 60px 0;
+        }
+
+        .agro-pollution-title {
+            font-size: 36px;
+        }
+
+        .agro-pollution-card {
+            min-height: 230px;
+        }
+    }
+
+
+    @media (max-width: 767.98px) {
+
+        .agro-pollution {
+            padding: 48px 0;
+        }
+
+        .agro-pollution-head {
+            margin-bottom: 28px;
+        }
+
+        .agro-pollution-title {
+            font-size: 30px;
+        }
+
+        .agro-pollution-subtitle {
+            font-size: 16px;
+        }
+
+        .agro-pollution-card {
+            min-height: 210px;
+
+            padding: 22px;
+
+            border-radius: 18px;
+        }
+
+        .pollution-icon {
+            width: 56px;
+            height: 56px;
+
+            transform: scale(.88);
+            transform-origin: left top;
+        }
+
+        .agro-pollution-card h3 {
+            margin-top: 18px;
+            font-size: 18px;
+        }
+
+        .agro-pollution-card p {
+            font-size: 14px;
+        }
+    }
+
+
+    @media (max-width: 575.98px) {
+
+        .agro-pollution .container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .agro-pollution-card {
+            padding: 18px;
+        }
+    }
 }
