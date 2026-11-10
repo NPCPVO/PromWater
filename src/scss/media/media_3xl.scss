@@ -80,3 +80,20 @@
 .main--about .left{
     padding-right: 80px;
 }
+.satis{
+    .category-card{
+        padding: 20px 20px 20px 50px ;
+        .down{
+            p{
+                span{
+                    &:first-of-type{
+                        width: 110px;
+                    }
+                    &:last-of-type{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

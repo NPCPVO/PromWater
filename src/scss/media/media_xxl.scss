@@ -42,3 +42,20 @@
 .main--about .left{
     padding-right: 80px;
 }
+.satis{
+    .category-card{
+        padding: 20px 20px 20px 18px ;
+        .down{
+            p{
+                span{
+                    &:first-of-type{
+                        width: 80px;
+                    }
+                    &:last-of-type{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
