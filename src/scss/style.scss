@@ -3679,9 +3679,12 @@ $satis_light: #A9EDE2;
             p{
                 margin-bottom: 0;
                 color: $satis_prime;
+                font-weight: 500;
                 span{
                     &:first-of-type{
                         font-size: 12px;
+                        display: inline-block;
+                        width: 110px;
                     }
                     &:last-of-type{
                         font-size: 16px;
