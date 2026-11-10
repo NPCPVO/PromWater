@@ -3657,6 +3657,19 @@ $satis_light: #A9EDE2;
         border-radius: 20px;
         padding: 20px 20px 20px 50px ;
         background-color: #FAFCFC;
+        .name{
+            p{
+                color: $satis_prime;
+                margin-bottom: 0;
+            }
+            .lit{
+                font-size: 12px;
+            }
+            .big{
+                font-size: 50px;
+                font-weight: 600;
+            }
+        }
     }
 }
 .trade_links_wrapp{
