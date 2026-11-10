@@ -3656,7 +3656,8 @@ $satis_light: #A9EDE2;
         border: 1px solid $satis_prime;
         border-radius: 20px;
         padding: 20px 20px 20px 50px ;
-        background-color: #FAFCFC;
+        background-color: rgba(169, 237, 226, 0.15);
+        box-shadow: 4px 4px 20px rgba(0,0,0,.08);
 
         .name{
             p{
@@ -3665,11 +3666,12 @@ $satis_light: #A9EDE2;
             }
             .lit{
                 font-size: 12px;
+                padding-left: 30px;
             }
             .big{
                 font-size: 50px;
                 font-weight: 600;
-
+                padding-left: 26px;
             }
         }
         img{
@@ -3680,6 +3682,7 @@ $satis_light: #A9EDE2;
                 margin-bottom: 0;
                 color: $satis_prime;
                 font-weight: 500;
+                padding-left: 30px;
                 span{
                     &:first-of-type{
                         font-size: 12px;
