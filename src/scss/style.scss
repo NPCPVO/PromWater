@@ -6026,23 +6026,6 @@ $satis_light: #A9EDE2;
 
 .plashki_news{
     .blocks_wrapp{
-        gap: 20px;
-        // Определяем ширину зазора (в вашем примере это 20px)
-        $grid-gap: 20px;
 
-        // Создаем миксин, принимающий максимальное число колонок
-        @mixin generate-columns($max-columns: 6) {
-            @for $i from 1 through $max-columns {
-                // Для одной колонки вычитания нет, ширина 100%
-                $basis: if($i == 1, 100%, (100% / $i) - (($i - 1) * $grid-gap / $i));
-
-                .column-#{$i} {
-                    flex-basis: $basis;
-                }
-            }
-        }
-
-        // Вызываем миксин
-        @include generate-columns(6);
     }
 }
