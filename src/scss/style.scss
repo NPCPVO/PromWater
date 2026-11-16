@@ -6026,6 +6026,35 @@ $satis_light: #A9EDE2;
 
 .plashki_news{
     .blocks_wrapp{
+        margin-bottom: 10px;
+        .block{
+            .inside{
+                height: 100%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .img{
+                    width: 100%;
+                    height: 40%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .low{
+                .inside{
+                    .img{
+                        display: none;
+                    }
+                    .text{
+                        display: none;
+                    }
+                }
+            }
+        }
         &.column-1{
             .block{
                 flex-basis: 100%;
@@ -6034,26 +6063,31 @@ $satis_light: #A9EDE2;
         &.column-2{
             .block{
                 flex-basis: calc(100%/2 - 10px);
+                max-width: calc(100%/2 - 10px);
             }
         }
         &.column-3{
             .block{
                 flex-basis: calc(100%/3 - 40px/3);
+                max-width: calc(100%/3 - 40px/3);
             }
         }
         &.column-4{
             .block{
                 flex-basis: calc(100%/4 - 60px/4);
+                max-width: calc(100%/4 - 60px/4);
             }
         }
         &.column-5{
             .block{
                 flex-basis: calc(100%/5 - 80px/5);
+                max-width: calc(100%/5 - 80px/5);
             }
         }
         &.column-6{
             .block{
                 flex-basis: calc(100%/6 - 100px/6);
+                max-width: calc(100%/6 - 100px/6);
             }
         }
     }
