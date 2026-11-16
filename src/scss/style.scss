@@ -6026,6 +6026,35 @@ $satis_light: #A9EDE2;
 
 .plashki_news{
     .blocks_wrapp{
-
+        &.column-1{
+            .block{
+                flex-basis: 100%;
+            }
+        }
+        &.column-2{
+            .block{
+                flex-basis: calc(100%/2 - 10px);
+            }
+        }
+        &.column-3{
+            .block{
+                flex-basis: calc(100%/3 - 40px/3);
+            }
+        }
+        &.column-4{
+            .block{
+                flex-basis: calc(100%/4 - 60px/4);
+            }
+        }
+        &.column-5{
+            .block{
+                flex-basis: calc(100%/5 - 80px/5);
+            }
+        }
+        &.column-6{
+            .block{
+                flex-basis: calc(100%/6 - 100px/6);
+            }
+        }
     }
 }
