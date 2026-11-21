@@ -6093,3 +6093,15 @@ $satis_light: #A9EDE2;
         }
     }
 }
+
+.distribution{
+    $red: #D34A3C;
+    $liteblue: #ECEDF3;
+    .main--about{
+        .left{
+            h2{
+                color: $red;
+            }
+        }
+    }
+}
