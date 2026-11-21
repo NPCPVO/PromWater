@@ -6097,9 +6097,13 @@ $satis_light: #A9EDE2;
 .distribution{
     $red: #D34A3C;
     $liteblue: #ECEDF3;
+    $grey: #8E8E92;
     .btn-primary{
         border-color: $red;
         background-color: $red;
+    }
+    .bg-grey{
+        background-color: $liteblue;
     }
     .btn-outline-primary{
         border-color: $red;
@@ -6112,11 +6116,13 @@ $satis_light: #A9EDE2;
         }
         .feature__card{
             border: none;
+            color: $red;
         }
         .feature__card-top{
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         }
     }
+
 }
 
 
