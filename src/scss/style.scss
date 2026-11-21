@@ -6101,15 +6101,24 @@ $satis_light: #A9EDE2;
         border-color: $red;
         background-color: $red;
     }
+    .btn-outline-primary{
+        border-color: $red;
+    }
     .main--about{
         .left{
             h2{
                 color: $red;
             }
         }
-
+        .feature__card{
+            border: none;
+        }
+        .feature__card-top{
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
     }
 }
+
 
 
 
