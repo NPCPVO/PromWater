@@ -6107,22 +6107,36 @@ $satis_light: #A9EDE2;
     }
     .btn-outline-primary{
         border-color: $red;
+        color: $red;
+    }
+    .color-red{
+        color: $red;
     }
     .main--about{
-        .left{
-            h2{
-                color: $red;
-            }
-        }
         .feature__card{
             border: none;
-            color: $red;
         }
         .feature__card-top{
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         }
     }
-
+    .plashki_news{
+        .blocks_wrapp{
+            .block{
+                border-radius: 24px;
+                .inside{
+                    .img{
+                        width: 200px;
+                        height: 100px;
+                        margin: 0 auto;
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
