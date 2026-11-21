@@ -6097,11 +6097,32 @@ $satis_light: #A9EDE2;
 .distribution{
     $red: #D34A3C;
     $liteblue: #ECEDF3;
+    .btn-primary{
+        background-color: $red; !important;
+        border-color: $red !important;
+        &:hover{
+
+        }
+    }
+    .tn-outline-primary{
+        color: $red;
+        border-color: $red;
+    }
     .main--about{
         .left{
             h2{
                 color: $red;
             }
         }
+        .feature__card{
+            border: none;
+            &-top{
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            }
+        }
     }
 }
+
+
+
+
