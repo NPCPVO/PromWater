@@ -6144,6 +6144,21 @@ $satis_light: #A9EDE2;
     #id_88874.plashki_news{
         .blocks_wrapp{
             .block{
+                border-radius: 25px;
+                padding: 34px 20px 88px 60px;
+                .inside{
+                   padding: 0;
+                    width: 50%;
+                    .title{
+                        position: relative;
+                        &:before{
+                            width: 5px;
+                            height: 68px;
+                            position: absolute;
+
+                        }
+                    }
+                }
                 .bg{
                     width: 350px !important;
                     height: 380px !important;
