@@ -6112,6 +6112,9 @@ $satis_light: #A9EDE2;
     .color-red{
         color: $red;
     }
+    .color-grey{
+        color: $grey;
+    }
     .main--about{
         .feature__card{
             border: none;
@@ -6137,8 +6140,18 @@ $satis_light: #A9EDE2;
             }
         }
     }
-}
 
+    #id_88874.plashki_news{
+        .blocks_wrapp{
+            .block{
+                .bg{
+                    width: 50% !important;
+                    height: 380зч !important;
+                }
+            }
+        }
+    }
+}
 
 
 
