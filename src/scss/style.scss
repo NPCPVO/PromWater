@@ -6149,8 +6149,11 @@ $satis_light: #A9EDE2;
                 .inside{
                    padding: 0;
                     width: 50%;
+                    justify-content: flex-start;
+
                     .title{
                         position: relative;
+                        margin-bottom: 80px;
                         &:before{
                             content: "";
                             display: block;
@@ -6158,6 +6161,16 @@ $satis_light: #A9EDE2;
                             height: 68px;
                             position: absolute;
 
+                        }
+                    }
+                    .text{
+                        ul{
+                            li{
+                                position: relative;
+                                font-size: 16px;
+                                font-weight: 400;
+                                list-style-type: circle;
+                            }
                         }
                     }
                 }
