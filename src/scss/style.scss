@@ -6145,8 +6145,10 @@ $satis_light: #A9EDE2;
         .blocks_wrapp{
             .block{
                 .bg{
-                    width: 50% !important;
+                    width: 350px !important;
                     height: 380px !important;
+                    right: 20px;
+                    top: 20px;
                 }
             }
         }
