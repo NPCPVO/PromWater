@@ -6160,16 +6160,21 @@ $satis_light: #A9EDE2;
                             width: 5px;
                             height: 68px;
                             position: absolute;
-
+                            left: -20px;
+                            top: -13px;
+                            background-color: #747B82;
                         }
                     }
                     .text{
+                        margin-bottom: 20px;
                         ul{
                             li{
                                 position: relative;
                                 font-size: 16px;
                                 font-weight: 400;
-                                list-style-type: circle;
+                                list-style-type: disc;
+                                line-height: 1.8;
+                                margin-bottom: 10px;
                             }
                         }
                     }
