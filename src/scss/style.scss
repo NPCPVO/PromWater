@@ -6108,6 +6108,10 @@ $satis_light: #A9EDE2;
     .btn-outline-primary{
         border-color: $red;
         color: $red;
+        &:hover{
+            background-color: $red;
+            color: #fff;
+        }
     }
     .color-red{
         color: $red;
