@@ -6152,6 +6152,8 @@ $satis_light: #A9EDE2;
                     .title{
                         position: relative;
                         &:before{
+                            content: "";
+                            display: block;
                             width: 5px;
                             height: 68px;
                             position: absolute;
@@ -6164,8 +6166,9 @@ $satis_light: #A9EDE2;
                     height: 380px !important;
                     right: 20px;
                     top: 20px;
+                    border-radius: 25px;
                     img{
-                        border-radius: 25px;
+
                     }
                 }
             }
