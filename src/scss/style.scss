@@ -6198,6 +6198,10 @@ $satis_light: #A9EDE2;
             .block{
                 border-radius: 25px;
                 padding-bottom: 30px;
+                .bg{
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                }
                 .title{
                     margin-bottom: 25px;
                 }
