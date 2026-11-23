@@ -6221,6 +6221,19 @@ $satis_light: #A9EDE2;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         }
     }
+    #id_88882{
+        .blocks_wrapp{
+            width: 100% !important;
+            .cases_block{
+                width: 100%;
+                background-color: transparent;
+                .section-title{
+                    text-align: left;
+                    color: $red;
+                }
+            }
+        }
+    }
 }
 
 
