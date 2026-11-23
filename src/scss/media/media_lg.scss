@@ -131,4 +131,51 @@
         }
     }
 
+    #id_88874.plashki_news {
+        .blocks_wrapp {
+            gap: 24px;
+
+            .block {
+                flex: 0 0 100%;
+                width: 100%;
+                max-width: 100%;
+                padding: 30px 25px 50px 50px;
+
+                .inside {
+                    width: 55%;
+
+                    .title {
+                        margin-bottom: 35px;
+                    }
+                }
+
+                .bg {
+                    width: 300px !important;
+                    height: 300px !important;
+                    right: 15px;
+                    top: 15px;
+                }
+            }
+        }
+    }
+
+    section#id_88882 {
+        .cases_line {
+            .blocks_wrapp {
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                .cases_block {
+                    flex-direction: column;
+                    align-items: flex-start !important;
+                    gap: 20px;
+
+                    .btn {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+
 }

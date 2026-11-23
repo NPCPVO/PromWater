@@ -6147,14 +6147,25 @@ $satis_light: #A9EDE2;
 
     #id_88874.plashki_news{
         .blocks_wrapp{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
             .block{
                 border-radius: 25px;
                 padding: 34px 20px 88px 60px;
+                box-sizing: border-box;
+                flex: 0 0 calc((100% - 24px) / 2);
+                width: calc((100% - 24px) / 2);
+                max-width: calc((100% - 24px) / 2);
+                min-width: 0;
+                overflow: hidden;
                 .inside{
                    padding: 0;
                     width: 50%;
                     justify-content: flex-start;
-
+                    position: relative;
+                    z-index: 1;
+                    min-width: 0;
                     .title{
                         position: relative;
                         margin-bottom: 80px;
@@ -6189,7 +6200,9 @@ $satis_light: #A9EDE2;
                     right: 20px;
                     top: 20px;
                     border-radius: 25px;
-
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
                     img{
 
                     }
@@ -6224,9 +6237,24 @@ $satis_light: #A9EDE2;
     #id_88882{
         .blocks_wrapp{
             width: 100% !important;
+            flex: 0 0 100%;
+            max-width: 100%;
             .cases_block{
                 width: 100%;
                 background-color: transparent;
+                display: flex;
+                gap: 30px;
+                border-radius: 24px;
+
+                > div {
+                    flex: 1 1 auto;
+                    min-width: 0;
+                }
+
+                .btn {
+                    flex: 0 0 auto;
+                    white-space: nowrap;
+                }
                 .section-title{
                     text-align: left;
                     color: $red;
@@ -6236,6 +6264,10 @@ $satis_light: #A9EDE2;
         }
     }
 }
+
+
+
+
 
 
 

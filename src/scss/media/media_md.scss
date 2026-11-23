@@ -497,6 +497,71 @@ body {
         }
     }
 
+    #id_88874.plashki_news {
+        .blocks_wrapp {
+            gap: 20px;
+
+            .block {
+                flex: 0 0 100%;
+                width: 100%;
+                max-width: 100%;
+                padding: 25px 20px 35px 40px;
+
+                .inside {
+                    width: 58%;
+
+                    .title {
+                        margin-bottom: 25px;
+
+                        &:before {
+                            height: 55px;
+                            left: -15px;
+                        }
+
+                        p {
+                            font-size: 21px !important;
+                        }
+                    }
+
+                    .text {
+                        ul {
+                            li {
+                                font-size: 15px;
+                                line-height: 1.6;
+                            }
+                        }
+                    }
+                }
+
+                .bg {
+                    width: 240px !important;
+                    height: 280px !important;
+                    right: 10px;
+                    top: 15px;
+                }
+            }
+        }
+    }
+
+    section#id_88882 {
+        .cases_line {
+            .blocks_wrapp {
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                .cases_block {
+                    flex-direction: column;
+                    align-items: flex-start !important;
+                    gap: 20px;
+
+                    .btn {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 

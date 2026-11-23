@@ -74,4 +74,27 @@
         }
     }
 
+    #id_88874.plashki_news {
+        .blocks_wrapp {
+            .block {
+                padding: 30px 15px 60px 40px;
+
+                .inside {
+                    width: 52%;
+
+                    .title {
+                        margin-bottom: 60px;
+                    }
+                }
+
+                .bg {
+                    width: 280px !important;
+                    height: 340px !important;
+                    right: 10px;
+                    top: 20px;
+                }
+            }
+        }
+    }
+
 }
