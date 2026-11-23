@@ -59,4 +59,19 @@
         }
     }
 }
+.distribution{
 
+    #id_88882.plashki_news,
+    #id_88867.plashki_news {
+        .blocks_wrapp {
+            gap: 30px;
+
+            .block {
+                flex-basis: calc((100% - 90px) / 4);
+                width: calc((100% - 90px) / 4);
+                max-width: calc((100% - 90px) / 4);
+            }
+        }
+    }
+
+}

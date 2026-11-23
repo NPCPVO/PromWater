@@ -462,6 +462,42 @@ body {
 .main--about .feature__card{
     flex-basis: calc(50% - 15px);
 }
+.distribution{
+
+    #id_88882.plashki_news,
+    #id_88867.plashki_news {
+        .blocks_wrapp {
+            gap: 20px;
+
+            .block {
+                flex-basis: calc((100% - 20px) / 2);
+                width: calc((100% - 20px) / 2);
+                max-width: calc((100% - 20px) / 2);
+            }
+        }
+    }
+
+    #id_88882.plashki_news {
+        .blocks_wrapp .block {
+            .inside {
+                padding: 20px 12px;
+            }
+
+            .title {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    #id_88867.plashki_news {
+        .blocks_wrapp .block {
+            .inside {
+                padding: 20px 12px;
+            }
+        }
+    }
+
+}
 
 
 
