@@ -6144,7 +6144,11 @@ $satis_light: #A9EDE2;
             }
         }
     }
-
+    .categories{
+        .category-card{
+            gap: 40px;
+        }
+    }
     #id_88874.plashki_news{
         .blocks_wrapp{
             display: flex;
